@@ -64,13 +64,13 @@ h1 {
   align-items: center;
   padding: 112px 32px 24px;
 
-  figure {
+  a {
     margin: 16px 0;
+    text-decoration: none;
   }
 
-  figure img {
-    max-width: 100%;
-    max-height: 36vh;
+  .photo-frame img {
+    max-height: 30vh;
   }
 }
 

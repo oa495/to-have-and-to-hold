@@ -1,13 +1,10 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
+import FramedPhoto from './FramedPhoto.jsx'
 import './Timeline.css'
 
 const DRAG_THRESHOLD = 5
-
-function formatMonth(year, month) {
-  return new Date(year, month - 1).toLocaleString('default', { month: 'long' })
-}
 
 // One segment per year from the earliest to the latest year in either dataset.
 // A year with uploads gets one full-screen panel per upload, with that year's
@@ -43,16 +40,7 @@ function UploadPanel({ upload, events }) {
         ))}
       </div>
       <Link to={`/uploads/${upload.id}`} draggable={false}>
-        <figure>
-          <img src={upload.image_url} alt={upload.title} draggable={false} />
-          <figcaption>
-            <time dateTime={`${upload.year}-${String(upload.month).padStart(2, '0')}`}>
-              {formatMonth(upload.year, upload.month)} {upload.year}
-            </time>
-            <h3>{upload.title}</h3>
-            <p>Shared by {upload.submitter}</p>
-          </figcaption>
-        </figure>
+        <FramedPhoto upload={upload} />
       </Link>
       <div className="event-band">
         {events.slice(half).map((event) => (

@@ -1,0 +1,38 @@
+/* A picture frame: a wooden border around a cream mat, with the metadata
+   handwritten on the wider bottom edge of the mat. */
+.photo-frame {
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 16px 16px 0;
+  background: #fbf8f1;
+  border: 12px solid #4a3426;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.25);
+
+  img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  /* Width 0 + min-width 100% keeps long captions from widening the frame. */
+  figcaption {
+    width: 0;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 14px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #2b2a4c;
+  }
+}
+
+.photo-frame-title {
+  font-size: 1.6rem;
+}

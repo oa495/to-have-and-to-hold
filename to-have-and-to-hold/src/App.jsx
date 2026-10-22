@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import TimelinePage from './pages/TimelinePage.jsx'
 import UploadPage from './pages/UploadPage.jsx'
+import './App.css';
 
 function App() {
   return (

@@ -1,4 +1,10 @@
 /* Only the layout needed for the horizontal timeline. */
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 8em;
+}
+
 .timeline {
   position: fixed;
   inset: 0;

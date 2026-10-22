@@ -1,0 +1,164 @@
+{
+  "uploads": [
+    {
+      "id": 1,
+      "image_url": "https://picsum.photos/seed/upload-1/800/600",
+      "title": "Grandma and Grandpa's wedding day",
+      "year": 1962,
+      "month": 6,
+      "submitter": "Rose"
+    },
+    {
+      "id": 2,
+      "image_url": "https://picsum.photos/seed/upload-2/800/600",
+      "title": "The first house on Maple Street",
+      "year": 1964,
+      "month": 9,
+      "submitter": "Rose"
+    },
+    {
+      "id": 3,
+      "image_url": "https://picsum.photos/seed/upload-3/800/600",
+      "title": "Linda comes home from the hospital",
+      "year": 1967,
+      "month": 3,
+      "submitter": "Rose"
+    },
+    {
+      "id": 4,
+      "image_url": "https://picsum.photos/seed/upload-4/800/600",
+      "title": "Watching the Moon landing at the neighbors'",
+      "year": 1969,
+      "month": 7,
+      "submitter": "Tom"
+    },
+    {
+      "id": 5,
+      "image_url": "https://picsum.photos/seed/upload-5/800/600",
+      "title": "Road trip to the Grand Canyon",
+      "year": 1972,
+      "month": 8,
+      "submitter": "Tom"
+    },
+    {
+      "id": 6,
+      "image_url": "https://picsum.photos/seed/upload-6/800/600",
+      "title": "Linda's first day of school",
+      "year": 1974,
+      "month": 9,
+      "submitter": "Rose"
+    },
+    {
+      "id": 7,
+      "image_url": "https://picsum.photos/seed/upload-7/800/600",
+      "title": "Christmas morning at Grandma's",
+      "year": 1977,
+      "month": 12,
+      "submitter": "Linda"
+    },
+    {
+      "id": 8,
+      "image_url": "https://picsum.photos/seed/upload-8/800/600",
+      "title": "Summer at the lake cabin",
+      "year": 1980,
+      "month": 7,
+      "submitter": "Tom"
+    },
+    {
+      "id": 9,
+      "image_url": "https://picsum.photos/seed/upload-9/800/600",
+      "title": "Linda's sweet sixteen",
+      "year": 1983,
+      "month": 4,
+      "submitter": "Linda"
+    },
+    {
+      "id": 10,
+      "image_url": "https://picsum.photos/seed/upload-10/800/600",
+      "title": "High school graduation",
+      "year": 1985,
+      "month": 6,
+      "submitter": "Linda"
+    },
+    {
+      "id": 11,
+      "image_url": "https://picsum.photos/seed/upload-11/800/600",
+      "title": "Linda and James meet at college",
+      "year": 1988,
+      "month": 10,
+      "submitter": "James"
+    },
+    {
+      "id": 12,
+      "image_url": "https://picsum.photos/seed/upload-12/800/600",
+      "title": "Backpacking through Europe",
+      "year": 1990,
+      "month": 7,
+      "submitter": "James"
+    },
+    {
+      "id": 13,
+      "image_url": "https://picsum.photos/seed/upload-13/800/600",
+      "title": "Linda and James get married",
+      "year": 1992,
+      "month": 5,
+      "submitter": "Linda"
+    },
+    {
+      "id": 14,
+      "image_url": "https://picsum.photos/seed/upload-14/800/600",
+      "title": "Moving to the city",
+      "year": 1994,
+      "month": 2,
+      "submitter": "James"
+    },
+    {
+      "id": 15,
+      "image_url": "https://picsum.photos/seed/upload-15/800/600",
+      "title": "Emma is born",
+      "year": 1996,
+      "month": 11,
+      "submitter": "Linda"
+    },
+    {
+      "id": 16,
+      "image_url": "https://picsum.photos/seed/upload-16/800/600",
+      "title": "New Year's Eve, 1999",
+      "year": 1999,
+      "month": 12,
+      "submitter": "James"
+    },
+    {
+      "id": 17,
+      "image_url": "https://picsum.photos/seed/upload-17/800/600",
+      "title": "Grandma and Grandpa's 40th anniversary",
+      "year": 2002,
+      "month": 6,
+      "submitter": "Emma"
+    },
+    {
+      "id": 18,
+      "image_url": "https://picsum.photos/seed/upload-18/800/600",
+      "title": "Emma's first piano recital",
+      "year": 2005,
+      "month": 4,
+      "submitter": "Linda"
+    },
+    {
+      "id": 19,
+      "image_url": "https://picsum.photos/seed/upload-19/800/600",
+      "title": "Family trip to Japan",
+      "year": 2008,
+      "month": 3,
+      "submitter": "Emma"
+    },
+    {
+      "id": 20,
+      "image_url": "https://picsum.photos/seed/upload-20/800/600",
+      "title": "Grandma Rose turns 70",
+      "year": 2010,
+      "month": 8,
+      "submitter": "Emma"
+    }
+  ]
+}

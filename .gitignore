@@ -1,0 +1,6 @@
+# data-retrieval: only track Nigeria-specific files
+data-retrieval/data/nyt/*.json
+data-retrieval/data/phoenix/
+data-retrieval/data/scad/SCAD2018Africa_Final.csv
+data-retrieval/scad_page/*
+!data-retrieval/scad_page/*nigeria*

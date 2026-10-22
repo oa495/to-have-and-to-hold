@@ -14,7 +14,8 @@ function FramedPhoto({ upload }) {
           <time dateTime={`${upload.year}-${String(upload.month).padStart(2, '0')}`}>
             {formatMonth(upload.year, upload.month)} {upload.year}
           </time>
-          {' — '}
+          {upload.location && ` | ${upload.location}`}
+          {' | '}
           {upload.submitter}
         </span>
       </figcaption>

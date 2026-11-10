@@ -4,3 +4,6 @@ data-retrieval/data/phoenix/
 data-retrieval/data/scad/SCAD2018Africa_Final.csv
 data-retrieval/scad_page/*
 !data-retrieval/scad_page/*nigeria*
+
+# Playwright MCP screenshots and logs
+.playwright-mcp/

@@ -6,6 +6,7 @@
       "title": "Kennedy elected president",
       "desc": "John F. Kennedy narrowly defeats Richard Nixon.",
       "year": 1960,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -14,6 +15,7 @@
       "title": "First televised presidential debates",
       "desc": "Kennedy and Nixon face off before 70 million viewers.",
       "year": 1960,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -22,6 +24,7 @@
       "title": "FDA approves the pill",
       "desc": "The first oral contraceptive goes on sale in the US.",
       "year": 1960,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -30,6 +33,7 @@
       "title": "Sharpeville massacre",
       "desc": "South African police kill 69 anti-apartheid protesters.",
       "year": 1960,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -38,6 +42,7 @@
       "title": "Greensboro sit-ins",
       "desc": "Students protest a segregated Woolworth's lunch counter.",
       "year": 1960,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -46,6 +51,7 @@
       "title": "Great Chilean earthquake",
       "desc": "The strongest earthquake ever recorded strikes Valdivia.",
       "year": 1960,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -54,6 +60,7 @@
       "title": "Year of Africa",
       "desc": "Seventeen African nations gain independence.",
       "year": 1960,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -62,6 +69,7 @@
       "title": "Rome Olympics",
       "desc": "Wilma Rudolph wins three golds; Abebe Bikila runs the marathon barefoot.",
       "year": 1960,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -70,6 +78,7 @@
       "title": "U-2 incident",
       "desc": "An American spy plane is shot down over the Soviet Union.",
       "year": 1960,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -78,6 +87,7 @@
       "title": "Psycho released",
       "desc": "Hitchcock's thriller changes horror films forever.",
       "year": 1960,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -86,6 +96,7 @@
       "title": "Gagarin orbits Earth",
       "desc": "Yuri Gagarin becomes the first human in space.",
       "year": 1961,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -94,6 +105,7 @@
       "title": "Berlin Wall goes up",
       "desc": "East Germany seals off West Berlin overnight.",
       "year": 1961,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -102,6 +114,7 @@
       "title": "Bay of Pigs invasion",
       "desc": "A US-backed invasion of Cuba fails within days.",
       "year": 1961,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -110,6 +123,7 @@
       "title": "Freedom Rides",
       "desc": "Activists ride interstate buses to challenge segregation.",
       "year": 1961,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -118,6 +132,7 @@
       "title": "Peace Corps founded",
       "desc": "Kennedy launches the volunteer program abroad.",
       "year": 1961,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -126,6 +141,7 @@
       "title": "Kennedy inaugurated",
       "desc": "\"Ask not what your country can do for you.\"",
       "year": 1961,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -134,6 +150,7 @@
       "title": "Alan Shepard in space",
       "desc": "The first American reaches space aboard Freedom 7.",
       "year": 1961,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -142,6 +159,7 @@
       "title": "Amnesty International founded",
       "desc": "A campaign for prisoners of conscience begins in London.",
       "year": 1961,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -150,6 +168,7 @@
       "title": "Breakfast at Tiffany's",
       "desc": "Audrey Hepburn stars as Holly Golightly.",
       "year": 1961,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -158,6 +177,7 @@
       "title": "Maris hits 61",
       "desc": "Roger Maris breaks Babe Ruth's single-season home run record.",
       "year": 1961,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -166,6 +186,7 @@
       "title": "Cuban Missile Crisis",
       "desc": "Thirteen days bring the world to the brink of nuclear war.",
       "year": 1962,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -174,6 +195,7 @@
       "title": "John Glenn orbits Earth",
       "desc": "The first American to orbit circles the planet three times.",
       "year": 1962,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -182,6 +204,7 @@
       "title": "\"Love Me Do\"",
       "desc": "The Beatles release their first single.",
       "year": 1962,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -190,6 +213,7 @@
       "title": "Silent Spring published",
       "desc": "Rachel Carson's book sparks the environmental movement.",
       "year": 1962,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -198,6 +222,7 @@
       "title": "Marilyn Monroe dies",
       "desc": "The film star is found dead at 36.",
       "year": 1962,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -206,6 +231,7 @@
       "title": "Algerian independence",
       "desc": "Algeria wins independence from France after eight years of war.",
       "year": 1962,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -214,6 +240,7 @@
       "title": "Second Vatican Council",
       "desc": "The Catholic Church begins sweeping reforms.",
       "year": 1962,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -222,6 +249,7 @@
       "title": "Telstar launches",
       "desc": "The first live transatlantic TV broadcast is relayed by satellite.",
       "year": 1962,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -230,6 +258,7 @@
       "title": "James Meredith enrolls",
       "desc": "He integrates the University of Mississippi under federal protection.",
       "year": 1962,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -238,6 +267,7 @@
       "title": "First Walmart opens",
       "desc": "Sam Walton opens a store in Rogers, Arkansas.",
       "year": 1962,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -246,6 +276,7 @@
       "title": "March on Washington",
       "desc": "Martin Luther King Jr. delivers \"I Have a Dream.\"",
       "year": 1963,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -254,6 +285,7 @@
       "title": "Kennedy assassinated",
       "desc": "President Kennedy is shot in Dallas.",
       "year": 1963,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -262,6 +294,7 @@
       "title": "First woman in space",
       "desc": "Valentina Tereshkova orbits Earth 48 times.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -270,6 +303,7 @@
       "title": "Birmingham campaign",
       "desc": "Protests against segregation draw national attention.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -278,6 +312,7 @@
       "title": "The Feminine Mystique",
       "desc": "Betty Friedan's book fuels second-wave feminism.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -286,6 +321,7 @@
       "title": "Beatlemania",
       "desc": "The Beatles sweep Britain.",
       "year": 1963,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -294,6 +330,7 @@
       "title": "Great Train Robbery",
       "desc": "Thieves steal £2.6 million from a Royal Mail train.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -302,6 +339,7 @@
       "title": "Hotline established",
       "desc": "A direct link connects Washington and Moscow.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -310,6 +348,7 @@
       "title": "Test Ban Treaty",
       "desc": "The US, UK and USSR ban atmospheric nuclear tests.",
       "year": 1963,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -318,6 +357,7 @@
       "title": "Doctor Who debuts",
       "desc": "The BBC airs the first episode.",
       "year": 1963,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -326,6 +366,7 @@
       "title": "Beatles on Ed Sullivan",
       "desc": "73 million Americans tune in.",
       "year": 1964,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -334,6 +375,7 @@
       "title": "Civil Rights Act signed",
       "desc": "Segregation in public places is outlawed.",
       "year": 1964,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -342,6 +384,7 @@
       "title": "Tokyo Olympics",
       "desc": "Japan's bullet train opens days before the Games.",
       "year": 1964,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -350,6 +393,7 @@
       "title": "Gulf of Tonkin Resolution",
       "desc": "Congress expands US involvement in Vietnam.",
       "year": 1964,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -358,6 +402,7 @@
       "title": "Mandela sentenced",
       "desc": "Nelson Mandela is sentenced to life in prison.",
       "year": 1964,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -366,6 +411,7 @@
       "title": "Clay beats Liston",
       "desc": "Cassius Clay wins the heavyweight title.",
       "year": 1964,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -374,6 +420,7 @@
       "title": "Ford Mustang unveiled",
       "desc": "The pony car debuts at the World's Fair.",
       "year": 1964,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -382,6 +429,7 @@
       "title": "Free Speech Movement",
       "desc": "Berkeley students protest restrictions on campus politics.",
       "year": 1964,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -390,6 +438,7 @@
       "title": "King wins Nobel Prize",
       "desc": "Martin Luther King Jr. receives the Peace Prize at 35.",
       "year": 1964,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -398,6 +447,7 @@
       "title": "Great Alaska earthquake",
       "desc": "A 9.2 quake strikes Prince William Sound.",
       "year": 1964,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -406,6 +456,7 @@
       "title": "Selma marches",
       "desc": "Marchers cross the Edmund Pettus Bridge to Montgomery.",
       "year": 1965,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -414,6 +465,7 @@
       "title": "Malcolm X assassinated",
       "desc": "He is killed in Harlem's Audubon Ballroom.",
       "year": 1965,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -422,6 +474,7 @@
       "title": "First spacewalk",
       "desc": "Alexei Leonov floats outside his capsule for 12 minutes.",
       "year": 1965,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -430,6 +483,7 @@
       "title": "Voting Rights Act",
       "desc": "Discriminatory voting practices are banned.",
       "year": 1965,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -438,6 +492,7 @@
       "title": "US troops land in Vietnam",
       "desc": "Marines arrive at Da Nang.",
       "year": 1965,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -446,6 +501,7 @@
       "title": "Medicare created",
       "desc": "Health coverage for older Americans becomes law.",
       "year": 1965,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -454,6 +510,7 @@
       "title": "Watts riots",
       "desc": "Six days of unrest shake Los Angeles.",
       "year": 1965,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -462,6 +519,7 @@
       "title": "The Sound of Music",
       "desc": "The film musical becomes a box-office record.",
       "year": 1965,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -470,6 +528,7 @@
       "title": "Northeast blackout",
       "desc": "30 million people lose power.",
       "year": 1965,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -478,6 +537,7 @@
       "title": "Singapore independence",
       "desc": "Singapore separates from Malaysia.",
       "year": 1965,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -486,6 +546,7 @@
       "title": "Cultural Revolution",
       "desc": "Mao launches a decade of upheaval in China.",
       "year": 1966,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -494,6 +555,7 @@
       "title": "England wins the World Cup",
       "desc": "England beats West Germany 4–2 at Wembley.",
       "year": 1966,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -502,6 +564,7 @@
       "title": "Star Trek premieres",
       "desc": "The starship Enterprise first appears on TV.",
       "year": 1966,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -510,6 +573,7 @@
       "title": "Miranda v. Arizona",
       "desc": "Police must inform suspects of their rights.",
       "year": 1966,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -518,6 +582,7 @@
       "title": "NOW founded",
       "desc": "The National Organization for Women is established.",
       "year": 1966,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -526,6 +591,7 @@
       "title": "Luna 9 lands",
       "desc": "The first soft landing on the Moon.",
       "year": 1966,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -534,6 +600,7 @@
       "title": "Black Panther Party founded",
       "desc": "Huey Newton and Bobby Seale organize in Oakland.",
       "year": 1966,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -542,6 +609,7 @@
       "title": "Aberfan disaster",
       "desc": "A colliery spoil tip engulfs a Welsh school.",
       "year": 1966,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -550,6 +618,7 @@
       "title": "Revolver and Pet Sounds",
       "desc": "Two landmark pop albums are released.",
       "year": 1966,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -558,6 +627,7 @@
       "title": "Indira Gandhi becomes PM",
       "desc": "She is India's first female prime minister.",
       "year": 1966,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -566,6 +636,7 @@
       "title": "Summer of Love",
       "desc": "Thousands gather in San Francisco's Haight-Ashbury.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -574,6 +645,7 @@
       "title": "Six-Day War",
       "desc": "Israel fights Egypt, Jordan and Syria.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -582,6 +654,7 @@
       "title": "Sgt. Pepper's",
       "desc": "The Beatles release their concept album.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -590,6 +663,7 @@
       "title": "First heart transplant",
       "desc": "Christiaan Barnard operates in Cape Town.",
       "year": 1967,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -598,6 +672,7 @@
       "title": "Apollo 1 fire",
       "desc": "Three astronauts die in a launchpad test.",
       "year": 1967,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -606,6 +681,7 @@
       "title": "Loving v. Virginia",
       "desc": "Bans on interracial marriage are struck down.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -614,6 +690,7 @@
       "title": "Thurgood Marshall confirmed",
       "desc": "The first Black Supreme Court justice.",
       "year": 1967,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -622,6 +699,7 @@
       "title": "First Super Bowl",
       "desc": "Green Bay beats Kansas City.",
       "year": 1967,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -630,6 +708,7 @@
       "title": "Che Guevara killed",
       "desc": "The revolutionary is executed in Bolivia.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -638,6 +717,7 @@
       "title": "Expo 67",
       "desc": "Montreal hosts the World's Fair.",
       "year": 1967,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -646,6 +726,7 @@
       "title": "King assassinated",
       "desc": "Martin Luther King Jr. is killed in Memphis.",
       "year": 1968,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -654,6 +735,7 @@
       "title": "Robert Kennedy assassinated",
       "desc": "He is shot after winning the California primary.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -662,6 +744,7 @@
       "title": "Prague Spring crushed",
       "desc": "Soviet tanks roll into Czechoslovakia.",
       "year": 1968,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -670,6 +753,7 @@
       "title": "May 1968",
       "desc": "Student protests and strikes paralyze France.",
       "year": 1968,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -678,6 +762,7 @@
       "title": "Tet Offensive",
       "desc": "North Vietnamese forces launch a surprise attack.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -686,6 +771,7 @@
       "title": "Earthrise",
       "desc": "Apollo 8 orbits the Moon and photographs Earth.",
       "year": 1968,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -694,6 +780,7 @@
       "title": "Black Power salute",
       "desc": "Tommie Smith and John Carlos protest on the Olympic podium.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -702,6 +789,7 @@
       "title": "2001: A Space Odyssey",
       "desc": "Kubrick's science-fiction epic premieres.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -710,6 +798,7 @@
       "title": "Nixon elected",
       "desc": "Richard Nixon wins the presidency.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -718,6 +807,7 @@
       "title": "My Lai massacre",
       "desc": "US soldiers kill hundreds of Vietnamese civilians.",
       "year": 1968,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -726,6 +816,7 @@
       "title": "Moon landing",
       "desc": "Neil Armstrong and Buzz Aldrin walk on the Moon.",
       "year": 1969,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -734,6 +825,7 @@
       "title": "Woodstock",
       "desc": "Half a million people gather for three days of music.",
       "year": 1969,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -742,6 +834,7 @@
       "title": "ARPANET's first message",
       "desc": "The internet's predecessor links UCLA and Stanford.",
       "year": 1969,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -750,6 +843,7 @@
       "title": "Stonewall riots",
       "desc": "A police raid sparks the gay rights movement.",
       "year": 1969,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -758,6 +852,7 @@
       "title": "Concorde's first flight",
       "desc": "The supersonic airliner takes off in Toulouse.",
       "year": 1969,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -766,6 +861,7 @@
       "title": "Rooftop concert",
       "desc": "The Beatles' last public performance.",
       "year": 1969,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -774,6 +870,7 @@
       "title": "Sesame Street debuts",
       "desc": "Big Bird and friends arrive on public TV.",
       "year": 1969,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -782,6 +879,7 @@
       "title": "Golda Meir becomes PM",
       "desc": "She leads Israel.",
       "year": 1969,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -790,6 +888,7 @@
       "title": "Draft lottery",
       "desc": "The first Vietnam draft lottery since WWII is held.",
       "year": 1969,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -798,6 +897,7 @@
       "title": "Abbey Road",
       "desc": "The Beatles release their final recorded album.",
       "year": 1969,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -806,6 +906,7 @@
       "title": "First Earth Day",
       "desc": "20 million Americans rally for the environment.",
       "year": 1970,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -814,6 +915,7 @@
       "title": "Kent State shootings",
       "desc": "National Guardsmen kill four students.",
       "year": 1970,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -822,6 +924,7 @@
       "title": "The Beatles break up",
       "desc": "Paul McCartney announces his departure.",
       "year": 1970,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -830,6 +933,7 @@
       "title": "Apollo 13",
       "desc": "\"Houston, we've had a problem.\" The crew returns safely.",
       "year": 1970,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -838,6 +942,7 @@
       "title": "Bhola cyclone",
       "desc": "A storm devastates East Pakistan.",
       "year": 1970,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -846,6 +951,7 @@
       "title": "Brazil wins the World Cup",
       "desc": "Pelé lifts his third trophy in Mexico.",
       "year": 1970,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -854,6 +960,7 @@
       "title": "EPA established",
       "desc": "The US creates the Environmental Protection Agency.",
       "year": 1970,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -862,6 +969,7 @@
       "title": "Jumbo jet service",
       "desc": "The Boeing 747 enters commercial service.",
       "year": 1970,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -870,6 +978,7 @@
       "title": "Hendrix and Joplin die",
       "desc": "Two rock icons die weeks apart.",
       "year": 1970,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -878,6 +987,7 @@
       "title": "Allende elected",
       "desc": "Salvador Allende becomes Chile's president.",
       "year": 1970,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -886,6 +996,7 @@
       "title": "Bangladesh independence",
       "desc": "A new nation emerges after war.",
       "year": 1971,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -894,6 +1005,7 @@
       "title": "Pentagon Papers",
       "desc": "Secret Vietnam War documents are published.",
       "year": 1971,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -902,6 +1014,7 @@
       "title": "First microprocessor",
       "desc": "Intel releases the 4004.",
       "year": 1971,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -910,6 +1023,7 @@
       "title": "Walt Disney World opens",
       "desc": "The Florida resort welcomes visitors.",
       "year": 1971,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -918,6 +1032,7 @@
       "title": "First email",
       "desc": "Ray Tomlinson sends a message between computers.",
       "year": 1971,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -926,6 +1041,7 @@
       "title": "Nixon shock",
       "desc": "The dollar is taken off the gold standard.",
       "year": 1971,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -934,6 +1050,7 @@
       "title": "Voting age lowered",
       "desc": "The 26th Amendment sets the voting age at 18.",
       "year": 1971,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -942,6 +1059,7 @@
       "title": "Greenpeace founded",
       "desc": "Activists sail to protest nuclear tests.",
       "year": 1971,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -950,6 +1068,7 @@
       "title": "Fight of the Century",
       "desc": "Joe Frazier defeats Muhammad Ali.",
       "year": 1971,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -958,6 +1077,7 @@
       "title": "First space station",
       "desc": "The Soviet Union launches Salyut 1.",
       "year": 1971,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -966,6 +1086,7 @@
       "title": "Nixon visits China",
       "desc": "A historic diplomatic opening.",
       "year": 1972,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -974,6 +1095,7 @@
       "title": "Watergate break-in",
       "desc": "Burglars are caught at Democratic headquarters.",
       "year": 1972,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -982,6 +1104,7 @@
       "title": "Munich massacre",
       "desc": "Israeli athletes are killed at the Olympics.",
       "year": 1972,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -990,6 +1113,7 @@
       "title": "Blue Marble",
       "desc": "Apollo 17's crew photographs the whole Earth.",
       "year": 1972,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -998,6 +1122,7 @@
       "title": "Pong released",
       "desc": "Atari's arcade game launches an industry.",
       "year": 1972,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1006,6 +1131,7 @@
       "title": "Title IX",
       "desc": "Sex discrimination in US education is banned.",
       "year": 1972,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1014,6 +1140,7 @@
       "title": "Bloody Sunday",
       "desc": "British soldiers shoot protesters in Derry.",
       "year": 1972,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1022,6 +1149,7 @@
       "title": "The Godfather",
       "desc": "Coppola's film premieres.",
       "year": 1972,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1030,6 +1158,7 @@
       "title": "Fischer vs. Spassky",
       "desc": "Bobby Fischer wins the world chess title.",
       "year": 1972,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1038,6 +1167,7 @@
       "title": "Ms. magazine launches",
       "desc": "The feminist magazine hits newsstands.",
       "year": 1972,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1046,6 +1176,7 @@
       "title": "Roe v. Wade",
       "desc": "The Supreme Court rules on abortion rights.",
       "year": 1973,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1054,6 +1185,7 @@
       "title": "Oil crisis",
       "desc": "An embargo quadruples oil prices.",
       "year": 1973,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1062,6 +1194,7 @@
       "title": "Sydney Opera House opens",
       "desc": "Jørn Utzon's landmark is completed.",
       "year": 1973,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1070,6 +1203,7 @@
       "title": "Paris Peace Accords",
       "desc": "US troops withdraw from Vietnam.",
       "year": 1973,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1078,6 +1212,7 @@
       "title": "Coup in Chile",
       "desc": "Augusto Pinochet seizes power.",
       "year": 1973,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1086,6 +1221,7 @@
       "title": "Yom Kippur War",
       "desc": "Egypt and Syria attack Israel.",
       "year": 1973,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1094,6 +1230,7 @@
       "title": "Skylab launched",
       "desc": "America's first space station reaches orbit.",
       "year": 1973,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1102,6 +1239,7 @@
       "title": "First mobile phone call",
       "desc": "Martin Cooper calls a rival from a New York street.",
       "year": 1973,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1110,6 +1248,7 @@
       "title": "World Trade Center opens",
       "desc": "The Twin Towers are dedicated.",
       "year": 1973,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1118,6 +1257,7 @@
       "title": "Battle of the Sexes",
       "desc": "Billie Jean King beats Bobby Riggs.",
       "year": 1973,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1126,6 +1266,7 @@
       "title": "Nixon resigns",
       "desc": "Watergate forces the president from office.",
       "year": 1974,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1134,6 +1275,7 @@
       "title": "Rumble in the Jungle",
       "desc": "Ali regains the title in Kinshasa.",
       "year": 1974,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1142,6 +1284,7 @@
       "title": "Terracotta Army discovered",
       "desc": "Farmers in Xi'an unearth thousands of clay soldiers.",
       "year": 1974,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1150,6 +1293,7 @@
       "title": "Carnation Revolution",
       "desc": "A peaceful coup ends dictatorship in Portugal.",
       "year": 1974,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1158,6 +1302,7 @@
       "title": "Lucy discovered",
       "desc": "A 3.2-million-year-old hominin skeleton is found in Ethiopia.",
       "year": 1974,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1166,6 +1311,7 @@
       "title": "Aaron passes Ruth",
       "desc": "Hank Aaron hits his 715th home run.",
       "year": 1974,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1174,6 +1320,7 @@
       "title": "ABBA wins Eurovision",
       "desc": "\"Waterloo\" launches the Swedish group.",
       "year": 1974,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1182,6 +1329,7 @@
       "title": "Rubik's Cube invented",
       "desc": "Ernő Rubik builds his first prototype.",
       "year": 1974,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1190,6 +1338,7 @@
       "title": "Cyprus divided",
       "desc": "Turkey invades northern Cyprus.",
       "year": 1974,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1198,6 +1347,7 @@
       "title": "Haile Selassie deposed",
       "desc": "Ethiopia's emperor is overthrown.",
       "year": 1974,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1206,6 +1356,7 @@
       "title": "Fall of Saigon",
       "desc": "The Vietnam War ends.",
       "year": 1975,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1214,6 +1365,7 @@
       "title": "Microsoft founded",
       "desc": "Bill Gates and Paul Allen start a company.",
       "year": 1975,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -1222,6 +1374,7 @@
       "title": "Jaws",
       "desc": "The first summer blockbuster.",
       "year": 1975,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -1230,6 +1383,7 @@
       "title": "Apollo–Soyuz",
       "desc": "US and Soviet spacecraft dock in orbit.",
       "year": 1975,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1238,6 +1392,7 @@
       "title": "Khmer Rouge take Phnom Penh",
       "desc": "Cambodia's genocide begins.",
       "year": 1975,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1246,6 +1401,7 @@
       "title": "Franco dies",
       "desc": "Spain begins its transition to democracy.",
       "year": 1975,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1254,6 +1410,7 @@
       "title": "Altair 8800",
       "desc": "A kit computer sparks the home computing hobby.",
       "year": 1975,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1262,6 +1419,7 @@
       "title": "Saturday Night Live premieres",
       "desc": "Live from New York.",
       "year": 1975,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1270,6 +1428,7 @@
       "title": "Lebanese Civil War",
       "desc": "Fifteen years of conflict begin.",
       "year": 1975,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1278,6 +1437,7 @@
       "title": "Angola and Mozambique independent",
       "desc": "Portugal's African colonies gain independence.",
       "year": 1975,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1286,6 +1446,7 @@
       "title": "US Bicentennial",
       "desc": "America celebrates 200 years.",
       "year": 1976,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1294,6 +1455,7 @@
       "title": "Apple founded",
       "desc": "Steve Jobs and Steve Wozniak start in a garage.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1302,6 +1464,7 @@
       "title": "Concorde enters service",
       "desc": "Supersonic passenger flights begin.",
       "year": 1976,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1310,6 +1473,7 @@
       "title": "Soweto uprising",
       "desc": "Students protest apartheid education.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1318,6 +1482,7 @@
       "title": "Viking 1 lands on Mars",
       "desc": "The first successful Mars landing for the US.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1326,6 +1491,7 @@
       "title": "Perfect 10",
       "desc": "Nadia Comăneci scores gymnastics' first perfect score.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1334,6 +1500,7 @@
       "title": "Tangshan earthquake",
       "desc": "A quake devastates a Chinese city.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1342,6 +1509,7 @@
       "title": "Mao dies",
       "desc": "Mao Zedong dies at 82.",
       "year": 1976,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1350,6 +1518,7 @@
       "title": "Entebbe raid",
       "desc": "Israeli commandos rescue hostages in Uganda.",
       "year": 1976,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1358,6 +1527,7 @@
       "title": "Carter elected",
       "desc": "Jimmy Carter wins the presidency.",
       "year": 1976,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1366,6 +1536,7 @@
       "title": "Star Wars",
       "desc": "A galaxy far, far away opens in theaters.",
       "year": 1977,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1374,6 +1545,7 @@
       "title": "Elvis dies",
       "desc": "The King of Rock and Roll dies at Graceland.",
       "year": 1977,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1382,6 +1554,7 @@
       "title": "Apple II",
       "desc": "One of the first mass-market personal computers.",
       "year": 1977,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1390,6 +1563,7 @@
       "title": "Voyager launches",
       "desc": "Two probes set out for the outer planets.",
       "year": 1977,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1398,6 +1572,7 @@
       "title": "New York blackout",
       "desc": "A 25-hour blackout hits the city.",
       "year": 1977,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1406,6 +1581,7 @@
       "title": "Roots",
       "desc": "The miniseries draws a record audience.",
       "year": 1977,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1414,6 +1590,7 @@
       "title": "Atari 2600",
       "desc": "Home video games go mainstream.",
       "year": 1977,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -1422,6 +1599,7 @@
       "title": "Sadat in Jerusalem",
       "desc": "Egypt's president addresses the Knesset.",
       "year": 1977,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1430,6 +1608,7 @@
       "title": "Steve Biko dies",
       "desc": "The activist dies in police custody.",
       "year": 1977,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1438,6 +1617,7 @@
       "title": "Last natural smallpox case",
       "desc": "Recorded in Somalia.",
       "year": 1977,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1446,6 +1626,7 @@
       "title": "First IVF baby",
       "desc": "Louise Brown is born in England.",
       "year": 1978,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1454,6 +1635,7 @@
       "title": "Camp David Accords",
       "desc": "Egypt and Israel agree on a framework for peace.",
       "year": 1978,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1462,6 +1644,7 @@
       "title": "Pope John Paul II",
       "desc": "The first non-Italian pope in 455 years.",
       "year": 1978,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1470,6 +1653,7 @@
       "title": "Jonestown",
       "desc": "More than 900 people die in Guyana.",
       "year": 1978,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1478,6 +1662,7 @@
       "title": "Harvey Milk assassinated",
       "desc": "The San Francisco supervisor is killed.",
       "year": 1978,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1486,6 +1671,7 @@
       "title": "Reform and opening up",
       "desc": "Deng Xiaoping begins China's economic reforms.",
       "year": 1978,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1494,6 +1680,7 @@
       "title": "Space Invaders",
       "desc": "The arcade game becomes a craze.",
       "year": 1978,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1502,6 +1689,7 @@
       "title": "Argentina wins the World Cup",
       "desc": "The host nation takes the title.",
       "year": 1978,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1510,6 +1698,7 @@
       "title": "Aldo Moro kidnapped",
       "desc": "The former Italian PM is seized by the Red Brigades.",
       "year": 1978,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1518,6 +1707,7 @@
       "title": "Garfield debuts",
       "desc": "Jim Davis's cat appears in newspapers.",
       "year": 1978,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1526,6 +1716,7 @@
       "title": "Iranian Revolution",
       "desc": "The Shah is overthrown.",
       "year": 1979,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1534,6 +1725,7 @@
       "title": "Three Mile Island",
       "desc": "A partial nuclear meltdown in Pennsylvania.",
       "year": 1979,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1542,6 +1734,7 @@
       "title": "Thatcher becomes PM",
       "desc": "Britain's first female prime minister.",
       "year": 1979,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1550,6 +1743,7 @@
       "title": "Sony Walkman",
       "desc": "Music goes portable.",
       "year": 1979,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1558,6 +1752,7 @@
       "title": "Soviets invade Afghanistan",
       "desc": "A decade-long war begins.",
       "year": 1979,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1566,6 +1761,7 @@
       "title": "Iran hostage crisis",
       "desc": "Students seize the US embassy in Tehran.",
       "year": 1979,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1574,6 +1770,7 @@
       "title": "Mother Teresa wins the Nobel",
       "desc": "Honored for her work in Calcutta.",
       "year": 1979,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1582,6 +1779,7 @@
       "title": "Sandinistas take power",
       "desc": "Nicaragua's Somoza regime falls.",
       "year": 1979,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1590,6 +1788,7 @@
       "title": "Egypt–Israel peace treaty",
       "desc": "Signed at the White House.",
       "year": 1979,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1598,6 +1797,7 @@
       "title": "\"Rapper's Delight\"",
       "desc": "Hip-hop's first hit single.",
       "year": 1979,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1606,6 +1806,7 @@
       "title": "Mount St. Helens erupts",
       "desc": "A volcano blows its top in Washington State.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1614,6 +1815,7 @@
       "title": "John Lennon killed",
       "desc": "He is shot outside the Dakota in New York.",
       "year": 1980,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1622,6 +1824,7 @@
       "title": "Solidarity founded",
       "desc": "Polish shipyard workers form a free union.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1630,6 +1833,7 @@
       "title": "CNN launches",
       "desc": "The first 24-hour news network.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1638,6 +1842,7 @@
       "title": "Miracle on Ice",
       "desc": "US college players beat the Soviet hockey team.",
       "year": 1980,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1646,6 +1851,7 @@
       "title": "Moscow Olympics boycott",
       "desc": "Dozens of countries stay away.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1654,6 +1860,7 @@
       "title": "Iran–Iraq War",
       "desc": "Eight years of war begin.",
       "year": 1980,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1662,6 +1869,7 @@
       "title": "Smallpox eradicated",
       "desc": "The WHO declares the disease gone.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1670,6 +1878,7 @@
       "title": "Pac-Man",
       "desc": "The arcade icon is released.",
       "year": 1980,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1678,6 +1887,7 @@
       "title": "Reagan elected",
       "desc": "Ronald Reagan wins the presidency.",
       "year": 1980,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1686,6 +1896,7 @@
       "title": "First Space Shuttle launch",
       "desc": "Columbia lifts off.",
       "year": 1981,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1694,6 +1905,7 @@
       "title": "MTV launches",
       "desc": "\"Video Killed the Radio Star\" plays first.",
       "year": 1981,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1702,6 +1914,7 @@
       "title": "Charles and Diana marry",
       "desc": "750 million people watch worldwide.",
       "year": 1981,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1710,6 +1923,7 @@
       "title": "IBM PC",
       "desc": "IBM enters the personal computer market.",
       "year": 1981,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1718,6 +1932,7 @@
       "title": "Reagan shot",
       "desc": "The president survives an assassination attempt.",
       "year": 1981,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1726,6 +1941,7 @@
       "title": "First AIDS cases reported",
       "desc": "The CDC describes a mysterious illness.",
       "year": 1981,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1734,6 +1950,7 @@
       "title": "Sadat assassinated",
       "desc": "Egypt's president is killed at a parade.",
       "year": 1981,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -1742,6 +1959,7 @@
       "title": "Sandra Day O'Connor",
       "desc": "The first woman on the Supreme Court.",
       "year": 1981,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1750,6 +1968,7 @@
       "title": "TGV",
       "desc": "France's high-speed train begins service.",
       "year": 1981,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1758,6 +1977,7 @@
       "title": "Pope shot",
       "desc": "John Paul II survives an attack in St. Peter's Square.",
       "year": 1981,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1766,6 +1986,7 @@
       "title": "Falklands War",
       "desc": "Britain and Argentina fight over the islands.",
       "year": 1982,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1774,6 +1995,7 @@
       "title": "E.T.",
       "desc": "Spielberg's film becomes the top-grossing film of its time.",
       "year": 1982,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1782,6 +2004,7 @@
       "title": "Thriller",
       "desc": "Michael Jackson releases the best-selling album ever.",
       "year": 1982,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1790,6 +2013,7 @@
       "title": "Vietnam Veterans Memorial",
       "desc": "Maya Lin's wall is dedicated.",
       "year": 1982,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1798,6 +2022,7 @@
       "title": "Compact disc",
       "desc": "The first CDs go on sale.",
       "year": 1982,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1806,6 +2031,7 @@
       "title": "Commodore 64",
       "desc": "It becomes the best-selling home computer.",
       "year": 1982,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1814,6 +2040,7 @@
       "title": "First artificial heart",
       "desc": "Barney Clark receives the Jarvik-7.",
       "year": 1982,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1822,6 +2049,7 @@
       "title": "Machine of the Year",
       "desc": "Time names the computer instead of a person.",
       "year": 1982,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1830,6 +2058,7 @@
       "title": "Italy wins the World Cup",
       "desc": "Paolo Rossi leads Italy in Spain.",
       "year": 1982,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1838,6 +2067,7 @@
       "title": "Princess Grace dies",
       "desc": "Grace Kelly dies after a car crash.",
       "year": 1982,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1846,6 +2076,7 @@
       "title": "Sally Ride in space",
       "desc": "The first American woman in space.",
       "year": 1983,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1854,6 +2085,7 @@
       "title": "The moonwalk",
       "desc": "Michael Jackson debuts it on Motown 25.",
       "year": 1983,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1862,6 +2094,7 @@
       "title": "Internet switches to TCP/IP",
       "desc": "The modern internet is born.",
       "year": 1983,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1870,6 +2103,7 @@
       "title": "KAL 007 shot down",
       "desc": "A Soviet jet downs a Korean airliner.",
       "year": 1983,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1878,6 +2112,7 @@
       "title": "Beirut barracks bombing",
       "desc": "241 US service members are killed.",
       "year": 1983,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1886,6 +2121,7 @@
       "title": "First commercial cell phone",
       "desc": "Motorola's DynaTAC goes on sale.",
       "year": 1983,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1894,6 +2130,7 @@
       "title": "Return of the Jedi",
       "desc": "The Star Wars trilogy concludes.",
       "year": 1983,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1902,6 +2139,7 @@
       "title": "Petrov's false alarm",
       "desc": "A Soviet officer averts nuclear war.",
       "year": 1983,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1910,6 +2148,7 @@
       "title": "Grenada invasion",
       "desc": "US forces land on the island.",
       "year": 1983,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1918,6 +2157,7 @@
       "title": "MLK Day signed",
       "desc": "A federal holiday is created.",
       "year": 1983,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1926,6 +2166,7 @@
       "title": "Macintosh launches",
       "desc": "Apple introduces the Mac.",
       "year": 1984,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1934,6 +2175,7 @@
       "title": "Los Angeles Olympics",
       "desc": "Carl Lewis wins four gold medals.",
       "year": 1984,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1942,6 +2184,7 @@
       "title": "Bhopal disaster",
       "desc": "A gas leak kills thousands in India.",
       "year": 1984,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -1950,6 +2193,7 @@
       "title": "Ethiopian famine",
       "desc": "Band Aid records \"Do They Know It's Christmas?\"",
       "year": 1984,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1958,6 +2202,7 @@
       "title": "Indira Gandhi assassinated",
       "desc": "She is killed by her bodyguards.",
       "year": 1984,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1966,6 +2211,7 @@
       "title": "Ghostbusters",
       "desc": "Who you gonna call?",
       "year": 1984,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -1974,6 +2220,7 @@
       "title": "Tetris",
       "desc": "Alexey Pajitnov creates the puzzle game.",
       "year": 1984,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -1982,6 +2229,7 @@
       "title": "Reagan re-elected",
       "desc": "He wins 49 states.",
       "year": 1984,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -1990,6 +2238,7 @@
       "title": "Brighton hotel bombing",
       "desc": "The IRA targets the British cabinet.",
       "year": 1984,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -1998,6 +2247,7 @@
       "title": "DNA fingerprinting",
       "desc": "Alec Jeffreys discovers the technique.",
       "year": 1984,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2006,6 +2256,7 @@
       "title": "Live Aid",
       "desc": "A global concert raises money for famine relief.",
       "year": 1985,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2014,6 +2265,7 @@
       "title": "Gorbachev takes power",
       "desc": "A new Soviet leader promises reform.",
       "year": 1985,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2022,6 +2274,7 @@
       "title": "Ozone hole discovered",
       "desc": "Scientists report a hole over Antarctica.",
       "year": 1985,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2030,6 +2283,7 @@
       "title": "Windows 1.0",
       "desc": "Microsoft releases its graphical operating system.",
       "year": 1985,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2038,6 +2292,7 @@
       "title": "Back to the Future",
       "desc": "Marty McFly travels to 1955.",
       "year": 1985,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2046,6 +2301,7 @@
       "title": "Titanic found",
       "desc": "The wreck is located on the ocean floor.",
       "year": 1985,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2054,6 +2310,7 @@
       "title": "Super Mario Bros.",
       "desc": "Nintendo's platformer is released.",
       "year": 1985,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2062,6 +2319,7 @@
       "title": "Mexico City earthquake",
       "desc": "Thousands are killed.",
       "year": 1985,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2070,6 +2328,7 @@
       "title": "Rainbow Warrior sunk",
       "desc": "French agents bomb the Greenpeace ship.",
       "year": 1985,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2078,6 +2337,7 @@
       "title": "\"We Are the World\"",
       "desc": "An all-star charity single.",
       "year": 1985,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2086,6 +2346,7 @@
       "title": "Challenger disaster",
       "desc": "The shuttle breaks apart after launch.",
       "year": 1986,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2094,6 +2355,7 @@
       "title": "Chernobyl",
       "desc": "A reactor explodes in Soviet Ukraine.",
       "year": 1986,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2102,6 +2364,7 @@
       "title": "Halley's Comet",
       "desc": "The comet returns to the inner solar system.",
       "year": 1986,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2110,6 +2373,7 @@
       "title": "People Power Revolution",
       "desc": "Marcos is ousted in the Philippines.",
       "year": 1986,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2118,6 +2382,7 @@
       "title": "Hand of God",
       "desc": "Maradona's goal knocks England out of the World Cup.",
       "year": 1986,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2126,6 +2391,7 @@
       "title": "Oprah goes national",
       "desc": "The Oprah Winfrey Show is syndicated.",
       "year": 1986,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -2134,6 +2400,7 @@
       "title": "Mir launched",
       "desc": "The Soviet space station begins assembly.",
       "year": 1986,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2142,6 +2409,7 @@
       "title": "Top Gun",
       "desc": "Tom Cruise takes to the skies.",
       "year": 1986,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2150,6 +2418,7 @@
       "title": "Iran–Contra affair",
       "desc": "A secret arms deal is exposed.",
       "year": 1986,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2158,6 +2427,7 @@
       "title": "Hands Across America",
       "desc": "Millions form a human chain.",
       "year": 1986,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2166,6 +2436,7 @@
       "title": "\"Tear down this wall\"",
       "desc": "Reagan challenges Gorbachev in Berlin.",
       "year": 1987,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2174,6 +2445,7 @@
       "title": "Black Monday",
       "desc": "Stock markets crash worldwide.",
       "year": 1987,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -2182,6 +2454,7 @@
       "title": "INF Treaty",
       "desc": "The US and USSR eliminate intermediate-range missiles.",
       "year": 1987,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2190,6 +2463,7 @@
       "title": "First Intifada",
       "desc": "A Palestinian uprising begins.",
       "year": 1987,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2198,6 +2472,7 @@
       "title": "Montreal Protocol",
       "desc": "Nations agree to protect the ozone layer.",
       "year": 1987,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2206,6 +2481,7 @@
       "title": "The Simpsons shorts",
       "desc": "The family debuts on The Tracey Ullman Show.",
       "year": 1987,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2214,6 +2490,7 @@
       "title": "Irises sells for $53.9 million",
       "desc": "A Van Gogh sets an auction record.",
       "year": 1987,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2222,6 +2499,7 @@
       "title": "Prozac approved",
       "desc": "A new class of antidepressant arrives.",
       "year": 1987,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2230,6 +2508,7 @@
       "title": "Supernova 1987A",
       "desc": "The brightest supernova seen in centuries.",
       "year": 1987,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2238,6 +2517,7 @@
       "title": "Great Storm",
       "desc": "Hurricane-force winds batter southern England.",
       "year": 1987,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2246,6 +2526,7 @@
       "title": "Lockerbie bombing",
       "desc": "Pan Am Flight 103 explodes over Scotland.",
       "year": 1988,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2254,6 +2535,7 @@
       "title": "Seoul Olympics",
       "desc": "South Korea hosts the Summer Games.",
       "year": 1988,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2262,6 +2544,7 @@
       "title": "Soviet withdrawal begins",
       "desc": "Troops start leaving Afghanistan.",
       "year": 1988,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2270,6 +2553,7 @@
       "title": "Benazir Bhutto elected",
       "desc": "The first woman to lead a Muslim-majority nation.",
       "year": 1988,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2278,6 +2562,7 @@
       "title": "Yellowstone fires",
       "desc": "A third of the park burns.",
       "year": 1988,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2286,6 +2571,7 @@
       "title": "Morris worm",
       "desc": "One of the first internet worms spreads.",
       "year": 1988,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2294,6 +2580,7 @@
       "title": "A Brief History of Time",
       "desc": "Stephen Hawking's book becomes a bestseller.",
       "year": 1988,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2302,6 +2589,7 @@
       "title": "Iran–Iraq ceasefire",
       "desc": "The eight-year war ends.",
       "year": 1988,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2310,6 +2598,7 @@
       "title": "Armenian earthquake",
       "desc": "A quake devastates Spitak.",
       "year": 1988,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2318,6 +2607,7 @@
       "title": "Mandela tribute concert",
       "desc": "Wembley celebrates his 70th birthday.",
       "year": 1988,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2326,6 +2616,7 @@
       "title": "Berlin Wall falls",
       "desc": "East Germans cross freely into the West.",
       "year": 1989,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2334,6 +2625,7 @@
       "title": "Tiananmen Square",
       "desc": "Protests in Beijing are violently suppressed.",
       "year": 1989,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2342,6 +2634,7 @@
       "title": "World Wide Web proposed",
       "desc": "Tim Berners-Lee writes his proposal at CERN.",
       "year": 1989,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2350,6 +2643,7 @@
       "title": "Exxon Valdez",
       "desc": "An oil spill fouls the Alaskan coast.",
       "year": 1989,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2358,6 +2652,7 @@
       "title": "Velvet Revolution",
       "desc": "Czechoslovakia peacefully ends communist rule.",
       "year": 1989,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2366,6 +2661,7 @@
       "title": "Game Boy",
       "desc": "Nintendo's handheld goes on sale.",
       "year": 1989,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2374,6 +2670,7 @@
       "title": "Loma Prieta earthquake",
       "desc": "It strikes during the World Series.",
       "year": 1989,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2382,6 +2679,7 @@
       "title": "Baltic Way",
       "desc": "Two million people join hands across three states.",
       "year": 1989,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2390,6 +2688,7 @@
       "title": "The Simpsons series",
       "desc": "The animated show gets its own time slot.",
       "year": 1989,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2398,6 +2697,7 @@
       "title": "Hillsborough disaster",
       "desc": "97 fans die in a stadium crush.",
       "year": 1989,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2406,6 +2706,7 @@
       "title": "Mandela released",
       "desc": "Nelson Mandela walks free after 27 years.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2414,6 +2715,7 @@
       "title": "German reunification",
       "desc": "East and West Germany become one.",
       "year": 1990,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -2422,6 +2724,7 @@
       "title": "Hubble launched",
       "desc": "The space telescope reaches orbit.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2430,6 +2733,7 @@
       "title": "Iraq invades Kuwait",
       "desc": "The Gulf crisis begins.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2438,6 +2742,7 @@
       "title": "Human Genome Project",
       "desc": "The effort to map human DNA begins.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2446,6 +2751,7 @@
       "title": "Windows 3.0",
       "desc": "Microsoft's breakthrough release.",
       "year": 1990,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2454,6 +2760,7 @@
       "title": "Wałęsa elected",
       "desc": "The Solidarity leader becomes Poland's president.",
       "year": 1990,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2462,6 +2769,7 @@
       "title": "Channel Tunnel breakthrough",
       "desc": "British and French workers meet underground.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2470,6 +2778,7 @@
       "title": "Thatcher resigns",
       "desc": "Britain's longest-serving PM of the century steps down.",
       "year": 1990,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2478,6 +2787,7 @@
       "title": "Gardner Museum heist",
       "desc": "Thieves steal $500 million in art in Boston.",
       "year": 1990,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2486,6 +2796,7 @@
       "title": "Soviet Union dissolves",
       "desc": "Fifteen republics become independent.",
       "year": 1991,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2494,6 +2805,7 @@
       "title": "Operation Desert Storm",
       "desc": "A coalition drives Iraq from Kuwait.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2502,6 +2814,7 @@
       "title": "First website",
       "desc": "info.cern.ch goes live.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2510,6 +2823,7 @@
       "title": "Apartheid laws repealed",
       "desc": "South Africa scraps its racial classification laws.",
       "year": 1991,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2518,6 +2832,7 @@
       "title": "Yugoslav wars begin",
       "desc": "Slovenia and Croatia declare independence.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2526,6 +2841,7 @@
       "title": "Linux",
       "desc": "Linus Torvalds releases his kernel.",
       "year": 1991,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2534,6 +2850,7 @@
       "title": "Nevermind",
       "desc": "Nirvana brings grunge to the mainstream.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2542,6 +2859,7 @@
       "title": "Magic Johnson announces HIV",
       "desc": "The NBA star retires.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2550,6 +2868,7 @@
       "title": "Mount Pinatubo",
       "desc": "An eruption cools the planet.",
       "year": 1991,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2558,6 +2877,7 @@
       "title": "Ötzi discovered",
       "desc": "A 5,300-year-old iceman is found in the Alps.",
       "year": 1991,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2566,6 +2886,7 @@
       "title": "Barcelona Olympics",
       "desc": "The US Dream Team dominates.",
       "year": 1992,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2574,6 +2895,7 @@
       "title": "Los Angeles riots",
       "desc": "Unrest follows the Rodney King verdict.",
       "year": 1992,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2582,6 +2904,7 @@
       "title": "Maastricht Treaty",
       "desc": "The European Union is founded on paper.",
       "year": 1992,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2590,6 +2913,7 @@
       "title": "Clinton elected",
       "desc": "Bill Clinton wins the presidency.",
       "year": 1992,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2598,6 +2922,7 @@
       "title": "Siege of Sarajevo",
       "desc": "The longest siege of a capital in modern warfare begins.",
       "year": 1992,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2606,6 +2931,7 @@
       "title": "Hurricane Andrew",
       "desc": "A Category 5 storm hits Florida.",
       "year": 1992,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2614,6 +2940,7 @@
       "title": "First text message",
       "desc": "\"Merry Christmas\" is sent over a phone network.",
       "year": 1992,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2622,6 +2949,7 @@
       "title": "Earth Summit",
       "desc": "World leaders meet in Rio de Janeiro.",
       "year": 1992,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2630,6 +2958,7 @@
       "title": "Mall of America opens",
       "desc": "The largest US mall opens in Minnesota.",
       "year": 1992,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2638,6 +2967,7 @@
       "title": "Euro Disney opens",
       "desc": "A Disney park opens outside Paris.",
       "year": 1992,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -2646,6 +2976,7 @@
       "title": "Oslo Accords",
       "desc": "Rabin and Arafat shake hands at the White House.",
       "year": 1993,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2654,6 +2985,7 @@
       "title": "Jurassic Park",
       "desc": "Dinosaurs return to the big screen.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2662,6 +2994,7 @@
       "title": "Mosaic browser",
       "desc": "The web gets a graphical browser.",
       "year": 1993,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2670,6 +3003,7 @@
       "title": "World Trade Center bombing",
       "desc": "A truck bomb explodes under the North Tower.",
       "year": 1993,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2678,6 +3012,7 @@
       "title": "Waco siege",
       "desc": "A 51-day standoff ends in fire.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2686,6 +3021,7 @@
       "title": "European Union",
       "desc": "The Maastricht Treaty takes effect.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2694,6 +3030,7 @@
       "title": "Velvet Divorce",
       "desc": "Czechoslovakia splits in two.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2702,6 +3039,7 @@
       "title": "Hubble repaired",
       "desc": "Astronauts fix the telescope's optics.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2710,6 +3048,7 @@
       "title": "Pentium",
       "desc": "Intel launches a new processor.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2718,6 +3057,7 @@
       "title": "Nobel for Mandela and de Klerk",
       "desc": "Honored for ending apartheid.",
       "year": 1993,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2726,6 +3066,7 @@
       "title": "Mandela elected",
       "desc": "South Africa holds its first all-race elections.",
       "year": 1994,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2734,6 +3075,7 @@
       "title": "Rwandan genocide",
       "desc": "Some 800,000 people are killed in 100 days.",
       "year": 1994,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2742,6 +3084,7 @@
       "title": "Channel Tunnel opens",
       "desc": "Britain and France are linked by rail.",
       "year": 1994,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2750,6 +3093,7 @@
       "title": "O.J. Simpson chase",
       "desc": "The slow-speed pursuit is broadcast live.",
       "year": 1994,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2758,6 +3102,7 @@
       "title": "Amazon founded",
       "desc": "Jeff Bezos starts an online bookstore.",
       "year": 1994,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2766,6 +3111,7 @@
       "title": "Kurt Cobain dies",
       "desc": "The Nirvana singer dies at 27.",
       "year": 1994,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2774,6 +3120,7 @@
       "title": "PlayStation",
       "desc": "Sony's console launches in Japan.",
       "year": 1994,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2782,6 +3129,7 @@
       "title": "Brazil wins the World Cup",
       "desc": "A penalty shootout decides it in Pasadena.",
       "year": 1994,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2790,6 +3138,7 @@
       "title": "NAFTA",
       "desc": "A trade pact links North America.",
       "year": 1994,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2798,6 +3147,7 @@
       "title": "Friends premieres",
       "desc": "Six friends in New York.",
       "year": 1994,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2806,6 +3156,7 @@
       "title": "Oklahoma City bombing",
       "desc": "168 people are killed.",
       "year": 1995,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2814,6 +3165,7 @@
       "title": "Srebrenica massacre",
       "desc": "Over 8,000 Bosniaks are killed.",
       "year": 1995,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2822,6 +3174,7 @@
       "title": "Windows 95",
       "desc": "Microsoft's launch has people lining up at midnight.",
       "year": 1995,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2830,6 +3183,7 @@
       "title": "eBay founded",
       "desc": "An online auction site begins.",
       "year": 1995,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2838,6 +3192,7 @@
       "title": "Toy Story",
       "desc": "The first fully computer-animated feature.",
       "year": 1995,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2846,6 +3201,7 @@
       "title": "Rabin assassinated",
       "desc": "Israel's prime minister is killed at a peace rally.",
       "year": 1995,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2854,6 +3210,7 @@
       "title": "WTO established",
       "desc": "The World Trade Organization begins operating.",
       "year": 1995,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2862,6 +3219,7 @@
       "title": "Kobe earthquake",
       "desc": "A quake devastates the Japanese city.",
       "year": 1995,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2870,6 +3228,7 @@
       "title": "Rugby World Cup",
       "desc": "Mandela hands the trophy to South Africa's captain.",
       "year": 1995,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2878,6 +3237,7 @@
       "title": "Java released",
       "desc": "Sun Microsystems launches the language.",
       "year": 1995,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2886,6 +3246,7 @@
       "title": "Dolly the sheep",
       "desc": "The first mammal cloned from an adult cell.",
       "year": 1996,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2894,6 +3255,7 @@
       "title": "Atlanta Olympics",
       "desc": "Muhammad Ali lights the cauldron.",
       "year": 1996,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2902,6 +3264,7 @@
       "title": "Deep Blue wins a game",
       "desc": "A computer beats Kasparov for the first time.",
       "year": 1996,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2910,6 +3273,7 @@
       "title": "Taliban take Kabul",
       "desc": "They seize control of Afghanistan's capital.",
       "year": 1996,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2918,6 +3282,7 @@
       "title": "Nintendo 64",
       "desc": "Super Mario 64 goes 3D.",
       "year": 1996,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -2926,6 +3291,7 @@
       "title": "Dunblane massacre",
       "desc": "Britain bans most handguns afterward.",
       "year": 1996,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2934,6 +3300,7 @@
       "title": "Macarena",
       "desc": "The dance craze sweeps the world.",
       "year": 1996,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2942,6 +3309,7 @@
       "title": "Australian gun laws",
       "desc": "Port Arthur prompts sweeping reform.",
       "year": 1996,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -2950,6 +3318,7 @@
       "title": "\"Wannabe\"",
       "desc": "The Spice Girls release their debut single.",
       "year": 1996,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -2958,6 +3327,7 @@
       "title": "Mad cow crisis",
       "desc": "Britain's beef exports are banned.",
       "year": 1996,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2966,6 +3336,7 @@
       "title": "Princess Diana dies",
       "desc": "She is killed in a car crash in Paris.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2974,6 +3345,7 @@
       "title": "Hong Kong handover",
       "desc": "Britain returns Hong Kong to China.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2982,6 +3354,7 @@
       "title": "Pathfinder lands on Mars",
       "desc": "The Sojourner rover explores the surface.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2990,6 +3363,7 @@
       "title": "Deep Blue beats Kasparov",
       "desc": "A computer wins a full match against a world champion.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -2998,6 +3372,7 @@
       "title": "Harry Potter published",
       "desc": "The Philosopher's Stone arrives in bookshops.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3006,6 +3381,7 @@
       "title": "Titanic",
       "desc": "James Cameron's epic becomes a phenomenon.",
       "year": 1997,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3014,6 +3390,7 @@
       "title": "Kyoto Protocol",
       "desc": "Nations agree to cut emissions.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3022,6 +3399,7 @@
       "title": "Comet Hale–Bopp",
       "desc": "One of the brightest comets of the century.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3030,6 +3408,7 @@
       "title": "Tiger Woods wins the Masters",
       "desc": "He wins by a record 12 strokes.",
       "year": 1997,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3038,6 +3417,7 @@
       "title": "Netflix founded",
       "desc": "A DVD-by-mail service starts.",
       "year": 1997,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3046,6 +3426,7 @@
       "title": "Google founded",
       "desc": "Two Stanford students start a search engine.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3054,6 +3435,7 @@
       "title": "ISS assembly begins",
       "desc": "The first module launches.",
       "year": 1998,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3062,6 +3444,7 @@
       "title": "Good Friday Agreement",
       "desc": "Peace comes to Northern Ireland.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3070,6 +3453,7 @@
       "title": "France wins the World Cup",
       "desc": "Zidane scores twice in the final.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3078,6 +3462,7 @@
       "title": "Clinton impeached",
       "desc": "The House approves two articles.",
       "year": 1998,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3086,6 +3471,7 @@
       "title": "iMac",
       "desc": "Apple's colorful computer debuts.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3094,6 +3480,7 @@
       "title": "Viagra approved",
       "desc": "A blockbuster drug arrives.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3102,6 +3489,7 @@
       "title": "Embassy bombings",
       "desc": "Attacks hit US embassies in Kenya and Tanzania.",
       "year": 1998,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3110,6 +3498,7 @@
       "title": "Hurricane Mitch",
       "desc": "Central America is devastated.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3118,6 +3507,7 @@
       "title": "Asian financial crisis",
       "desc": "Currencies collapse across the region.",
       "year": 1998,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3126,6 +3516,7 @@
       "title": "Euro introduced",
       "desc": "Eleven countries adopt a shared currency.",
       "year": 1999,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3134,6 +3525,7 @@
       "title": "Y2K fears",
       "desc": "The world prepares for the millennium bug.",
       "year": 1999,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3142,6 +3534,7 @@
       "title": "Napster",
       "desc": "File sharing upends the music industry.",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3150,6 +3543,7 @@
       "title": "Columbine",
       "desc": "A school shooting shocks America.",
       "year": 1999,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3158,6 +3552,7 @@
       "title": "The Matrix",
       "desc": "Red pill or blue pill?",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3166,6 +3561,7 @@
       "title": "Kosovo War",
       "desc": "NATO bombs Yugoslavia.",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3174,6 +3570,7 @@
       "title": "Women's World Cup",
       "desc": "The US wins before 90,000 fans in Pasadena.",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3182,6 +3579,7 @@
       "title": "East Timor votes",
       "desc": "Its people choose independence.",
       "year": 1999,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3190,6 +3588,7 @@
       "title": "Day of Six Billion",
       "desc": "The world's population passes six billion.",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3198,6 +3597,7 @@
       "title": "Putin becomes acting president",
       "desc": "Yeltsin resigns on New Year's Eve.",
       "year": 1999,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3206,6 +3606,7 @@
       "title": "Millennium celebrations",
       "desc": "The world welcomes the year 2000.",
       "year": 2000,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3214,6 +3615,7 @@
       "title": "Dot-com crash",
       "desc": "The tech bubble bursts.",
       "year": 2000,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3222,6 +3624,7 @@
       "title": "Human genome draft",
       "desc": "A rough map of human DNA is announced.",
       "year": 2000,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3230,6 +3633,7 @@
       "title": "Bush v. Gore",
       "desc": "The Supreme Court decides the election.",
       "year": 2000,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3238,6 +3642,7 @@
       "title": "Sydney Olympics",
       "desc": "Cathy Freeman wins the 400m.",
       "year": 2000,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3246,6 +3651,7 @@
       "title": "First ISS crew",
       "desc": "The station becomes permanently crewed.",
       "year": 2000,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3254,6 +3660,7 @@
       "title": "Concorde crash",
       "desc": "Air France Flight 4590 crashes outside Paris.",
       "year": 2000,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3262,6 +3669,7 @@
       "title": "PlayStation 2",
       "desc": "Sony's console becomes the best-selling ever.",
       "year": 2000,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3270,6 +3678,7 @@
       "title": "Kursk sinks",
       "desc": "A Russian submarine is lost with all hands.",
       "year": 2000,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3278,6 +3687,7 @@
       "title": "Putin elected",
       "desc": "He wins Russia's presidential election.",
       "year": 2000,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3286,6 +3696,7 @@
       "title": "September 11 attacks",
       "desc": "Nearly 3,000 people are killed.",
       "year": 2001,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3294,6 +3705,7 @@
       "title": "Wikipedia launches",
       "desc": "The free encyclopedia anyone can edit.",
       "year": 2001,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3302,6 +3714,7 @@
       "title": "iPod",
       "desc": "\"1,000 songs in your pocket.\"",
       "year": 2001,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3310,6 +3723,7 @@
       "title": "War in Afghanistan",
       "desc": "US-led forces begin strikes.",
       "year": 2001,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3318,6 +3732,7 @@
       "title": "China joins the WTO",
       "desc": "It enters the global trading system.",
       "year": 2001,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3326,6 +3741,7 @@
       "title": "Harry Potter on film",
       "desc": "The Philosopher's Stone opens in theaters.",
       "year": 2001,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3334,6 +3750,7 @@
       "title": "Enron collapses",
       "desc": "A giant energy company goes bankrupt.",
       "year": 2001,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3342,6 +3759,7 @@
       "title": "First space tourist",
       "desc": "Dennis Tito visits the ISS.",
       "year": 2001,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3350,6 +3768,7 @@
       "title": "Same-sex marriage",
       "desc": "The Netherlands is the first to legalize it.",
       "year": 2001,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3358,6 +3777,7 @@
       "title": "Xbox",
       "desc": "Microsoft enters the console market.",
       "year": 2001,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3366,6 +3786,7 @@
       "title": "Euro notes and coins",
       "desc": "The currency enters circulation.",
       "year": 2002,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3374,6 +3795,7 @@
       "title": "Brazil's fifth World Cup",
       "desc": "Ronaldo scores twice in the final.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3382,6 +3804,7 @@
       "title": "Salt Lake City Olympics",
       "desc": "The Winter Games come to Utah.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3390,6 +3813,7 @@
       "title": "Bali bombings",
       "desc": "202 people are killed.",
       "year": 2002,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3398,6 +3822,7 @@
       "title": "International Criminal Court",
       "desc": "The court begins operations.",
       "year": 2002,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3406,6 +3831,7 @@
       "title": "SARS emerges",
       "desc": "A new virus appears in southern China.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3414,6 +3840,7 @@
       "title": "African Union",
       "desc": "It replaces the Organisation of African Unity.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3422,6 +3849,7 @@
       "title": "Moscow theater siege",
       "desc": "Chechen militants take hundreds hostage.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3430,6 +3858,7 @@
       "title": "East Timor independence",
       "desc": "A new nation is born.",
       "year": 2002,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3438,6 +3867,7 @@
       "title": "Spider-Man",
       "desc": "The superhero film breaks box-office records.",
       "year": 2002,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3446,6 +3876,7 @@
       "title": "Iraq War begins",
       "desc": "A US-led coalition invades.",
       "year": 2003,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3454,6 +3885,7 @@
       "title": "Columbia disaster",
       "desc": "The shuttle breaks apart on re-entry.",
       "year": 2003,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3462,6 +3894,7 @@
       "title": "Human genome completed",
       "desc": "The project finishes ahead of schedule.",
       "year": 2003,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3470,6 +3903,7 @@
       "title": "SARS outbreak",
       "desc": "The virus spreads across Asia and beyond.",
       "year": 2003,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3478,6 +3912,7 @@
       "title": "Concorde retired",
       "desc": "The supersonic jet makes its final flights.",
       "year": 2003,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3486,6 +3921,7 @@
       "title": "The Return of the King",
       "desc": "The Lord of the Rings concludes.",
       "year": 2003,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3494,6 +3930,7 @@
       "title": "Skype launches",
       "desc": "Free internet calls go mainstream.",
       "year": 2003,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3502,6 +3939,7 @@
       "title": "Saddam captured",
       "desc": "He is found hiding near Tikrit.",
       "year": 2003,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3510,6 +3948,7 @@
       "title": "European heat wave",
       "desc": "Tens of thousands die.",
       "year": 2003,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3518,6 +3957,7 @@
       "title": "Northeast blackout",
       "desc": "50 million people lose power.",
       "year": 2003,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3526,6 +3966,7 @@
       "title": "Indian Ocean tsunami",
       "desc": "Over 230,000 people are killed.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3534,6 +3975,7 @@
       "title": "Facebook launches",
       "desc": "It starts in a Harvard dorm room.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3542,6 +3984,7 @@
       "title": "Athens Olympics",
       "desc": "The Games return to Greece.",
       "year": 2004,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3550,6 +3993,7 @@
       "title": "Madrid train bombings",
       "desc": "193 people are killed.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3558,6 +4002,7 @@
       "title": "EU enlarges",
       "desc": "Ten countries join.",
       "year": 2004,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3566,6 +4011,7 @@
       "title": "Mars rovers land",
       "desc": "Spirit and Opportunity explore the red planet.",
       "year": 2004,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3574,6 +4020,7 @@
       "title": "Orange Revolution",
       "desc": "Protests overturn Ukraine's election.",
       "year": 2004,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3582,6 +4029,7 @@
       "title": "Red Sox win",
       "desc": "Boston ends an 86-year championship drought.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3590,6 +4038,7 @@
       "title": "Gmail",
       "desc": "Google launches its email service.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3598,6 +4047,7 @@
       "title": "SpaceShipOne",
       "desc": "A private spacecraft reaches space.",
       "year": 2004,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3606,6 +4056,7 @@
       "title": "Hurricane Katrina",
       "desc": "New Orleans floods.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3614,6 +4065,7 @@
       "title": "YouTube launches",
       "desc": "\"Me at the zoo\" is the first upload.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3622,6 +4074,7 @@
       "title": "London bombings",
       "desc": "Attacks hit the Tube and a bus.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3630,6 +4083,7 @@
       "title": "Pope Benedict XVI",
       "desc": "Joseph Ratzinger is elected.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3638,6 +4092,7 @@
       "title": "Kyoto takes effect",
       "desc": "The climate treaty enters into force.",
       "year": 2005,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3646,6 +4101,7 @@
       "title": "Live 8",
       "desc": "Concerts call for action on poverty.",
       "year": 2005,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3654,6 +4110,7 @@
       "title": "Merkel becomes chancellor",
       "desc": "Germany's first female chancellor.",
       "year": 2005,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3662,6 +4119,7 @@
       "title": "Huygens lands on Titan",
       "desc": "A probe touches down on Saturn's moon.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3670,6 +4128,7 @@
       "title": "Kashmir earthquake",
       "desc": "Over 80,000 people are killed.",
       "year": 2005,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3678,6 +4137,7 @@
       "title": "Xbox 360",
       "desc": "Microsoft launches its second console.",
       "year": 2005,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3686,6 +4146,7 @@
       "title": "Twitter launches",
       "desc": "\"just setting up my twttr.\"",
       "year": 2006,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3694,6 +4155,7 @@
       "title": "Pluto reclassified",
       "desc": "It becomes a dwarf planet.",
       "year": 2006,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3702,6 +4164,7 @@
       "title": "Saddam executed",
       "desc": "He is hanged in Baghdad.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3710,6 +4173,7 @@
       "title": "Italy wins the World Cup",
       "desc": "They beat France on penalties.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3718,6 +4182,7 @@
       "title": "Wii",
       "desc": "Nintendo's motion-control console arrives.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3726,6 +4191,7 @@
       "title": "North Korea nuclear test",
       "desc": "Its first nuclear detonation.",
       "year": 2006,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3734,6 +4200,7 @@
       "title": "Google buys YouTube",
       "desc": "For $1.65 billion.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3742,6 +4209,7 @@
       "title": "Lebanon War",
       "desc": "Israel and Hezbollah fight for 34 days.",
       "year": 2006,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3750,6 +4218,7 @@
       "title": "Turin Olympics",
       "desc": "The Winter Games come to Italy.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3758,6 +4227,7 @@
       "title": "Muhammad Yunus wins the Nobel",
       "desc": "Honored for microcredit.",
       "year": 2006,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3766,6 +4236,7 @@
       "title": "iPhone",
       "desc": "Apple reinvents the phone.",
       "year": 2007,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3774,6 +4245,7 @@
       "title": "Subprime crisis",
       "desc": "Mortgage defaults ripple through markets.",
       "year": 2007,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3782,6 +4254,7 @@
       "title": "Deathly Hallows",
       "desc": "The final Harry Potter book is released.",
       "year": 2007,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3790,6 +4263,7 @@
       "title": "Virginia Tech shooting",
       "desc": "32 people are killed.",
       "year": 2007,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3798,6 +4272,7 @@
       "title": "Kindle",
       "desc": "Amazon launches its e-reader.",
       "year": 2007,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3806,6 +4281,7 @@
       "title": "Benazir Bhutto assassinated",
       "desc": "She is killed at a rally in Rawalpindi.",
       "year": 2007,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3814,6 +4290,7 @@
       "title": "Nobel for Gore and the IPCC",
       "desc": "Honored for climate change work.",
       "year": 2007,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3822,6 +4299,7 @@
       "title": "Bulgaria and Romania join the EU",
       "desc": "The union grows to 27.",
       "year": 2007,
+      "significance": 5,
       "location": "Nigeria"
     },
     {
@@ -3830,6 +4308,7 @@
       "title": "Netflix streaming",
       "desc": "Netflix begins streaming video.",
       "year": 2007,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3838,6 +4317,7 @@
       "title": "Saffron Revolution",
       "desc": "Monks lead protests in Myanmar.",
       "year": 2007,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3846,6 +4326,7 @@
       "title": "Obama elected",
       "desc": "The first Black US president.",
       "year": 2008,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3854,6 +4335,7 @@
       "title": "Lehman Brothers collapses",
       "desc": "The financial crisis deepens.",
       "year": 2008,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3862,6 +4344,7 @@
       "title": "Beijing Olympics",
       "desc": "China hosts the Summer Games.",
       "year": 2008,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3870,6 +4353,7 @@
       "title": "Large Hadron Collider",
       "desc": "The particle accelerator is switched on.",
       "year": 2008,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3878,6 +4362,7 @@
       "title": "Sichuan earthquake",
       "desc": "Nearly 70,000 people are killed.",
       "year": 2008,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3886,6 +4371,7 @@
       "title": "Mumbai attacks",
       "desc": "166 people are killed.",
       "year": 2008,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3894,6 +4380,7 @@
       "title": "App Store opens",
       "desc": "Apps come to the iPhone.",
       "year": 2008,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3902,6 +4389,7 @@
       "title": "Cyclone Nargis",
       "desc": "A storm devastates Myanmar.",
       "year": 2008,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3910,6 +4398,7 @@
       "title": "Kosovo independence",
       "desc": "It declares independence from Serbia.",
       "year": 2008,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3918,6 +4407,7 @@
       "title": "Phelps wins eight golds",
       "desc": "A single-Olympics record.",
       "year": 2008,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3926,6 +4416,7 @@
       "title": "Obama inaugurated",
       "desc": "A record crowd fills the National Mall.",
       "year": 2009,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3934,6 +4425,7 @@
       "title": "H1N1 pandemic",
       "desc": "Swine flu spreads worldwide.",
       "year": 2009,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3942,6 +4434,7 @@
       "title": "Michael Jackson dies",
       "desc": "The King of Pop dies at 50.",
       "year": 2009,
+      "significance": 4,
       "location": "Nigeria"
     },
     {
@@ -3950,6 +4443,7 @@
       "title": "Miracle on the Hudson",
       "desc": "Captain Sully lands a jet on the river.",
       "year": 2009,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3958,6 +4452,7 @@
       "title": "Bitcoin",
       "desc": "The first block is mined.",
       "year": 2009,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3966,6 +4461,7 @@
       "title": "Avatar",
       "desc": "It becomes the highest-grossing film ever.",
       "year": 2009,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -3974,6 +4470,7 @@
       "title": "Kepler launched",
       "desc": "A telescope hunts for exoplanets.",
       "year": 2009,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3982,6 +4479,7 @@
       "title": "Green Movement",
       "desc": "Protests follow Iran's election.",
       "year": 2009,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -3990,6 +4488,7 @@
       "title": "Copenhagen summit",
       "desc": "Climate talks end without a binding deal.",
       "year": 2009,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -3998,6 +4497,7 @@
       "title": "Bolt runs 9.58",
       "desc": "A new 100m world record.",
       "year": 2009,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -4006,6 +4506,7 @@
       "title": "Haiti earthquake",
       "desc": "Over 200,000 people are killed.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -4014,6 +4515,7 @@
       "title": "Deepwater Horizon",
       "desc": "An oil rig explodes in the Gulf of Mexico.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -4022,6 +4524,7 @@
       "title": "Arab Spring begins",
       "desc": "Protests erupt in Tunisia.",
       "year": 2010,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -4030,6 +4533,7 @@
       "title": "Chilean miners rescued",
       "desc": "33 miners return after 69 days underground.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -4038,6 +4542,7 @@
       "title": "iPad",
       "desc": "Apple launches its tablet.",
       "year": 2010,
+      "significance": 1,
       "location": "Nigeria"
     },
     {
@@ -4046,6 +4551,7 @@
       "title": "Instagram launches",
       "desc": "A photo-sharing app arrives.",
       "year": 2010,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -4054,6 +4560,7 @@
       "title": "WikiLeaks cables",
       "desc": "Diplomatic cables are published.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -4062,6 +4569,7 @@
       "title": "Burj Khalifa opens",
       "desc": "The world's tallest building.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     },
     {
@@ -4070,6 +4578,7 @@
       "title": "World Cup in South Africa",
       "desc": "Spain wins the first African World Cup.",
       "year": 2010,
+      "significance": 3,
       "location": "Nigeria"
     },
     {
@@ -4078,6 +4587,7 @@
       "title": "Eyjafjallajökull",
       "desc": "An Icelandic eruption grounds European flights.",
       "year": 2010,
+      "significance": 2,
       "location": "Nigeria"
     }
   ]

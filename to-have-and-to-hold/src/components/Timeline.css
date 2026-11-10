@@ -1,9 +1,61 @@
 /* Only the layout needed for the horizontal timeline. */
 
-h1 {
-  font-family: "Fraunces", serif;
-  font-size: 8em;
+body {
+  font-family: 'Lora', Helvetica, sans-serif;
 }
+
+.spread {
+  position: relative;
+  box-shadow: 0 16px 18px -8px rgba(0,0,0,.38), 0 2px 3px rgba(0,0,0,.25);
+}
+
+/* Gloss sheen over everything, including photos and text */
+.spread::after {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(105deg, transparent 20%, rgba(255,255,255,.5) 31%, transparent 43%),
+    linear-gradient(105deg, transparent 58%, rgba(255,255,255,.3) 66%, transparent 74%);
+  mix-blend-mode: soft-light;   /* "screen" for a stronger shine */
+} 
+
+
+h1 {
+  width: 100%;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: #0d0d0d;                              /* solid fallback: always visible */
+  text-shadow: 0 1px 0 rgba(255,255,255,.25),  /* light catching the top edge */
+               0 2px 3px rgba(0,0,0,.35);      /* soft shadow underneath */
+}
+
+/* Gloss gradient inside the letters, only where the browser supports it */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1 {
+    background-image: linear-gradient(180deg, #5a5a5a 0%, #151515 40%, #000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;                         /* shadows show through a transparent fill */
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,.35));
+  }
+}
+
+/* The title badge: square, as big as fits above the subheading. */
+h1 svg {
+  display: block;
+  width: min(100%, 80dvh);
+  margin: 0 auto;
+  overflow: visible;
+}
+
+h1 text {
+  font-size: 95px;
+  font-weight: 900;
+  letter-spacing: 0.000001em;
+  fill: currentColor;
+}
+
 
 .timeline {
   position: fixed;
@@ -37,75 +89,203 @@ h1 {
   padding: 16px;
 }
 
-/* A year: its label pinned top-left, then its upload panels or event grid. */
+/* A year: its quilt. */
 .timeline-year {
   position: relative;
   display: flex;
   height: 100%;
+  box-sizing: border-box;
+  padding-left: 32px;
 
+  &:last-child {
+    padding-right: 32px;
+  }
+
+  /* Kept for screen readers; the year shows in the fixed corner label. */
   h2 {
     position: absolute;
-    top: 0;
-    left: 32px;
-    margin: 16px 0 0;
-    font-size: 4rem;
-    line-height: 1;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 }
 
-/* One upload per screen, with that year's events above and below it. */
-.upload-panel {
-  flex: 0 0 auto;
-  min-width: 100vw;
-  box-sizing: border-box;
+/* The current year, fixed bottom-right of the page; slides up when it
+   changes. */
+.timeline-current-year {
+  position: fixed;
+  right: 32px;
+  bottom: 16px;
+  z-index: 30;
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+  pointer-events: none;
+  animation: year-in 300ms ease-out;
+}
+
+@keyframes year-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-current-year {
+    animation: none;
+  }
+}
+
+/* One quilt per year: a loose grid of patches six cells tall, filling the
+   screen top to bottom. Patches flow down then across, and dense packing
+   fills the gaps big patches leave. */
+.quilt {
+  --gap: 20px;
+  --cell: calc((100dvh - 16px - 5 * var(--gap)) / 6);
+  display: grid;
+  grid-template-rows: repeat(6, var(--cell));
+  grid-auto-columns: var(--cell);
+  grid-auto-flow: column dense;
+  gap: var(--gap);
+  /* Wider between columns than rows, for more empty quilt between patches. */
+  column-gap: 32px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.quilt-block {
+  /* The block only holds its patch; the patch image has its own stitching. */
+  position: relative;
+  font-size: calc(0.6rem + var(--significance) * 0.18rem);
+}
+
+/* Big events draw at 80% of their grid area, centred, leaving empty quilt
+   round them; the small ones fill theirs. */
+.quilt-block--large .event-card {
+  position: absolute;
+  inset: 10%;
+  height: auto;
+}
+
+
+/* An event: one patch image stretched to the block. The PNGs carry their
+   own cloth, stitching and shadow. */
+.event-card {
+  position: relative;
+  height: 100%;
+  background: center / 100% 100% no-repeat;
+}
+
+.event-card--photo {
+  background-image: url("/patches/patch-1.png");
+  color: #fbf8ee;
+}
+
+.event-card--text {
+  background-image: url("/patches/patch-text-only.png");
+}
+
+/* Content sits inside the patch's stitch line. Percent insets so it keeps
+   to the stitches whatever size the patch is stretched to. */
+.event-card-body {
+  position: absolute;
+  inset: 11% 10% 11% 9%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 112px 32px 24px;
-
-  a {
-    margin: 16px 0;
-    text-decoration: none;
-  }
-
-  .photo-frame img {
-    max-height: 30vh;
-  }
-}
-
-.event-band {
-  display: flex;
-  gap: 24px;
-}
-
-/* A year without uploads: events flow into columns three rows tall. */
-.event-grid {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-auto-flow: column;
-  grid-auto-columns: 200px;
-  gap: 24px;
-  align-content: center;
-  padding: 112px 32px 24px;
-}
-
-.event-card {
-  width: 200px;
+  gap: 0.3em;
+  overflow: hidden;
 
   img {
-    display: block;
+    flex: 1;
+    min-height: 0;
     width: 100%;
-    height: 70px;
     object-fit: cover;
+    filter: grayscale(1) contrast(0.95);
+  }
+
+  h5 {
+    flex: none;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3em;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 
   p {
-    margin: 4px 0 0;
+    flex: none;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.3;
+  }
+
+  > p:not(.event-card-location) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 
   .event-card-location {
-    font-size: 0.85em;
-    opacity: 0.7;
+    font-size: 0.7em;
+    opacity: 0.8;
+  }
+}
+
+/* Under a photo the text is a small caption, as in the mocks. */
+.event-card--photo h5 {
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 400;
+  -webkit-line-clamp: 2;
+}
+
+/* The text-only patch has decorative stitch rows across its top; the text
+   starts below them. */
+.event-card--text .event-card-body {
+  inset: 32% 7% 12% 7%;
+}
+
+/* An upload: the larger patch, the photo in its inner stitched box and the
+   caption below. */
+.quilt-patch {
+  z-index: 10;
+
+  a {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  figure {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background: url("/patches/patch-two.png") center / 100% 100% no-repeat;
+    color: #fbf8ee;
+  }
+
+  img {
+    position: absolute;
+    inset: 7% 7% 30% 6%;
+    width: 87%;
+    height: 63%;
+    object-fit: cover;
+    filter: sepia(0.25) contrast(0.9);
+  }
+
+  figcaption {
+    position: absolute;
+    inset: 72% 7% 6% 6%;
+    overflow: hidden;
   }
 }

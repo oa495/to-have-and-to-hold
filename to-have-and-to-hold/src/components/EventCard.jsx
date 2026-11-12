@@ -1,8 +1,10 @@
+import { shownLocation } from '../location.js'
 import './PatchText.css'
 
 function EventCard({ event }) {
   // Small blocks only have room for the image and title.
   const showDetails = (event.significance ?? 1) >= 3
+  const location = shownLocation(event.location)
   // One patch: with a photo, the photo sits at the top and the text under it;
   // without one, the text sits on the plain text-only patch.
   return (
@@ -13,8 +15,8 @@ function EventCard({ event }) {
         {event.image_url && <img src={event.image_url} alt="" draggable={false} />}
         <h5>{event.title}</h5>
         {showDetails && <p>{event.desc}</p>}
-        {showDetails && event.location && (
-          <p className="patch-text-meta">{event.location}</p>
+        {showDetails && location && (
+          <p className="patch-text-meta">{location}</p>
         )}
       </div>
     </article>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
+import { shownLocation } from '../location.js'
 import { uploadPath } from '../uploadSlug.js'
 import { yearFromHash, yearHash } from '../yearHash.js'
 import './PatchText.css'
@@ -91,7 +92,7 @@ function UploadPatch({ upload }) {
             <h5>{upload.title}</h5>
             <div className="quilt-patch-meta">
               <p className="patch-text-meta">
-                {upload.location && `${upload.location}, `}
+                {shownLocation(upload.location) && `${shownLocation(upload.location)}, `}
                 <time dateTime={String(upload.year)}>{upload.year}</time>
               </p>
               <span

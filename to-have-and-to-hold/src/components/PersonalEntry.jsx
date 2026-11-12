@@ -1,3 +1,4 @@
+import { shownLocation } from '../location.js'
 import './PatchText.css'
 import './PersonalEntry.css'
 
@@ -10,7 +11,7 @@ function PersonalEntry({ upload }) {
           <h5>{upload.title}</h5>
           <div>
             <p className="patch-text-meta">
-              {upload.location && `${upload.location}, `}
+              {shownLocation(upload.location) && `${shownLocation(upload.location)}, `}
               <time dateTime={String(upload.year)}>{upload.year}</time>
             </p>
             <p className="patch-text-meta">{upload.submitter}</p>

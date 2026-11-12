@@ -1,0 +1,17 @@
+/* The way back to the timeline: just an arrow, in the timeline's display
+   face. Pinned to the corner so the entry can centre on the whole screen.
+   Playfair draws the arrow 0.34em below the top of its line box and 0.1em in
+   from the left, so those are taken off to leave the visible arrow an equal
+   --corner from the top and left edges. */
+.back-link {
+  --corner: 24px;
+  position: absolute;
+  top: calc(var(--corner) - 0.34em);
+  left: calc(var(--corner) - 0.1em);
+  z-index: 2;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #0d0d0d;
+  text-decoration: none;
+}

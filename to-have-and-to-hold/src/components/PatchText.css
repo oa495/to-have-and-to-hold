@@ -1,0 +1,59 @@
+/* Text on a patch, shared by the timeline's event cards and the personal
+   entry's photo patch so the two keep the same type. Sizes are in em: set
+   font-size on the .patch-text element to scale them all together. Each
+   patch sets its own colour. */
+.patch-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* A minimum space between photo, title and text, for patches where the
+     photo takes up all the free height; padding keeps a lone title (where
+     gap does nothing) off the stitching too. */
+  gap: 0.5em;
+  padding: 0.2em;
+  overflow: hidden;
+
+  h5 {
+    flex: none;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1em;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+
+  p {
+    flex: none;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.3;
+    font-family: 'Lato';
+  }
+
+  > p:not(.patch-text-meta) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .patch-text-meta {
+    font-size: 0.7em;
+    opacity: 0.8;
+  }
+}
+
+/* The caption band under the photo on the green upload patch
+   (patch-two.png), on the timeline and the upload page. The patch must be a
+   container (container-type: inline-size) so the type scales with it: cqi
+   keeps the same text-to-patch ratio at any patch size. Percent insets keep
+   the band inside the stitches. */
+.patch-text--upload {
+  position: absolute;
+  inset: 72% 7% 6% 6%;
+  font-size: 3.5cqi;
+}

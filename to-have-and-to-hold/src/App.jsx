@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/timeline" replace />} />
         <Route path="/timeline" element={<TimelinePage />} />
-        <Route path="/uploads/:id" element={<UploadPage />} />
+        <Route path="/:submitter/:slug" element={<UploadPage />} />
       </Routes>
     </BrowserRouter>
   )

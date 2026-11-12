@@ -4,22 +4,6 @@ body {
   font-family: 'Lora', Helvetica, sans-serif;
 }
 
-.spread {
-  position: relative;
-  box-shadow: 0 16px 18px -8px rgba(0,0,0,.38), 0 2px 3px rgba(0,0,0,.25);
-}
-
-/* Gloss sheen over everything, including photos and text */
-.spread::after {
-  content: "";
-  position: fixed; inset: 0; pointer-events: none;
-  background:
-    linear-gradient(105deg, transparent 20%, rgba(255,255,255,.5) 31%, transparent 43%),
-    linear-gradient(105deg, transparent 58%, rgba(255,255,255,.3) 66%, transparent 74%);
-  mix-blend-mode: soft-light;   /* "screen" for a stronger shine */
-} 
-
-
 h1 {
   width: 100%;
   margin: 0;
@@ -178,27 +162,36 @@ h1 text {
 .event-card {
   position: relative;
   height: 100%;
+}
+
+/* The patch image sits on its own layer so it can be faded without fading
+   the text and photo above it. */
+.event-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: center / 100% 100% no-repeat;
+  opacity: var(--patch-opacity, 0.85);
 }
 
 .event-card--photo {
-  background-image: url("/patches/patch-1.png");
   color: #fbf8ee;
 }
 
-.event-card--text {
+.event-card--photo::before {
+  background-image: url("/patches/patch-1.png");
+}
+
+.event-card--text::before {
   background-image: url("/patches/patch-text-only.png");
 }
 
 /* Content sits inside the patch's stitch line. Percent insets so it keeps
-   to the stitches whatever size the patch is stretched to. */
+   to the stitches whatever size the patch is stretched to. The type comes
+   from .patch-text (PatchText.css). */
 .event-card-body {
   position: absolute;
   inset: 11% 10% 11% 9%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
-  overflow: hidden;
 
   img {
     flex: 1;
@@ -207,45 +200,13 @@ h1 text {
     object-fit: cover;
     filter: grayscale(1) contrast(0.95);
   }
-
-  h5 {
-    flex: none;
-    margin: 0;
-    font-family: "Playfair Display", serif;
-    font-size: 1.3em;
-    line-height: 1.15;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-  }
-
-  p {
-    flex: none;
-    margin: 0;
-    font-size: 0.8em;
-    line-height: 1.3;
-  }
-
-  > p:not(.event-card-location) {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-  }
-
-  .event-card-location {
-    font-size: 0.7em;
-    opacity: 0.8;
-  }
 }
 
-/* Under a photo the text is a small caption, as in the mocks. */
-.event-card--photo h5 {
-  font-family: inherit;
-  font-size: 0.9em;
-  font-weight: 400;
-  -webkit-line-clamp: 2;
+/* With a photo and details (description, location), the photo keeps its
+   share of the patch: all the text scales down together, keeping its
+   proportions. A photo with just a title keeps the full size. */
+.event-card--photo .event-card-body:has(p) {
+  font-size: 0.75em;
 }
 
 /* The text-only patch has decorative stitch rows across its top; the text
@@ -258,6 +219,39 @@ h1 text {
    caption below. */
 .quilt-patch {
   z-index: 10;
+  /* Grows a little on hover or keyboard focus. scale, not transform, so it
+     stacks on the inline offset-and-tilt transform instead of replacing it. */
+  transition: scale 0.2s ease-out;
+
+  &:hover,
+  &:has(a:focus-visible) {
+    scale: 1.04;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
+  /* Location and year on the left; the author on a small stitched label
+     at the bottom right of the caption band. */
+  .quilt-patch-meta {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+
+  /* Each label sits a little crooked, as if sewn on by hand: a fixed
+     per-upload tilt of 2-4deg either way, set inline. */
+  .author-patch {
+    flex: none;
+    rotate: var(--author-tilt, -2deg);
+    padding: 0.5em 1.1em;
+    background: url("/patches/author.png") center / 100% 100% no-repeat;
+    font-family: 'Lato';
+    font-size: 0.85em;
+    line-height: 1.3;
+  }
 
   a {
     display: block;
@@ -268,6 +262,7 @@ h1 text {
 
   figure {
     position: relative;
+    container-type: inline-size;
     height: 100%;
     margin: 0;
     background: url("/patches/patch-two.png") center / 100% 100% no-repeat;
@@ -281,11 +276,5 @@ h1 text {
     height: 63%;
     object-fit: cover;
     filter: sepia(0.25) contrast(0.9);
-  }
-
-  figcaption {
-    position: absolute;
-    inset: 72% 7% 6% 6%;
-    overflow: hidden;
   }
 }

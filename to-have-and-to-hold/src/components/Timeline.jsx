@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
+import { uploadPath } from '../uploadSlug.js'
+import './PatchText.css'
 import './Timeline.css'
 
 const DRAG_THRESHOLD = 5
@@ -57,9 +59,7 @@ function buildYears(uploads, events) {
   const years = [...uploads, ...events].map((item) => item.year)
   const result = []
   for (let year = Math.min(...years); year <= Math.max(...years); year++) {
-    const yearUploads = uploads
-      .filter((u) => u.year === year)
-      .sort((a, b) => a.month - b.month)
+    const yearUploads = uploads.filter((u) => u.year === year)
     const items = pickEvents(events.filter((e) => e.year === year)).map((event) => ({
       type: 'event',
       event,
@@ -74,13 +74,28 @@ function buildYears(uploads, events) {
 }
 
 function UploadPatch({ upload }) {
+  // The author label's tilt: 2-4deg either way, never near straight.
+  const w = wobble(upload.id * 3)
+  const authorTilt = Math.sign(w || 1) * (2 + Math.abs(w) * 2)
   return (
     <li className="quilt-patch" style={patchStyle(UPLOAD_SPAN, upload.id * 7, 2.5)}>
-      <Link to={`/uploads/${upload.id}`} draggable={false}>
+      <Link to={uploadPath(upload)} draggable={false}>
         <figure>
           <img src={upload.image_url} alt={upload.title} draggable={false} />
-          <figcaption>
-            {upload.title} · {upload.year}
+          <figcaption className="patch-text patch-text--upload">
+            <h5>{upload.title}</h5>
+            <div className="quilt-patch-meta">
+              <p className="patch-text-meta">
+                {upload.location && `${upload.location}, `}
+                <time dateTime={String(upload.year)}>{upload.year}</time>
+              </p>
+              <span
+                className="author-patch"
+                style={{ '--author-tilt': `${authorTilt}deg` }}
+              >
+                {upload.submitter}
+              </span>
+            </div>
           </figcaption>
         </figure>
       </Link>

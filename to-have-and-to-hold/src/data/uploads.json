@@ -4,8 +4,8 @@
       "id": 1,
       "image_url": "https://picsum.photos/seed/upload-1/800/600",
       "title": "Grandma and Grandpa's wedding day",
+      "description": "A small ceremony with both families crowded into the church. Grandpa's suit was borrowed from his brother and was a size too big.",
       "year": 1962,
-      "month": 6,
       "submitter": "Rose",
       "location": "Nigeria"
     },
@@ -13,8 +13,8 @@
       "id": 2,
       "image_url": "https://picsum.photos/seed/upload-2/800/600",
       "title": "The first house on Maple Street",
+      "description": "Two bedrooms, a crooked gate and a mango tree that Grandpa swore he'd prune. He never did. Grandma painted the front door blue the first weekend, and it stayed blue for thirty years.",
       "year": 1964,
-      "month": 9,
       "submitter": "Rose",
       "location": "Nigeria"
     },
@@ -22,8 +22,8 @@
       "id": 3,
       "image_url": "https://picsum.photos/seed/upload-3/800/600",
       "title": "Linda comes home from the hospital",
+      "description": "Everyone took turns holding her on the drive home. She slept through all of it. Grandma says the neighbours came round with so much food that nobody cooked for a fortnight.",
       "year": 1967,
-      "month": 3,
       "submitter": "Rose",
       "location": "Nigeria"
     },
@@ -31,8 +31,8 @@
       "id": 4,
       "image_url": "https://picsum.photos/seed/upload-4/800/600",
       "title": "Watching the Moon landing at the neighbors'",
+      "description": "Half the street packed into one living room around a borrowed television. The picture kept flickering, so Tom stood by the aerial for most of the night. When Armstrong stepped out, the whole room went quiet. Then everyone cheered at once, and the children ran outside to look at the real Moon.",
       "year": 1969,
-      "month": 7,
       "submitter": "Tom",
       "location": "Nigeria"
     },
@@ -40,8 +40,8 @@
       "id": 5,
       "image_url": "https://picsum.photos/seed/upload-5/800/600",
       "title": "Road trip to the Grand Canyon",
+      "description": "Three weeks in the station wagon, one flat tyre and far too many songs. Linda counted cows out of the window until she fell asleep. We camped most nights and ate a lot of tinned beans. Standing at the edge of the canyon, nobody said anything for a long time. Tom still has the map, folded wrong, in his desk drawer.",
       "year": 1972,
-      "month": 8,
       "submitter": "Tom",
       "location": "Nigeria"
     },
@@ -49,8 +49,8 @@
       "id": 6,
       "image_url": "https://picsum.photos/seed/upload-6/800/600",
       "title": "Linda's first day of school",
+      "description": "New shoes, a too-big satchel and a brave wave at the gate. She didn't cry. Rose did.",
       "year": 1974,
-      "month": 9,
       "submitter": "Rose",
       "location": "Nigeria"
     },
@@ -58,8 +58,8 @@
       "id": 7,
       "image_url": "https://picsum.photos/seed/upload-7/800/600",
       "title": "Christmas morning at Grandma's",
+      "description": "Paper everywhere, cousins underfoot and Grandma's cake on the table by nine. Uncle Femi fell asleep in the armchair before lunch. The children put on a play in the afternoon that nobody quite understood. It was the last Christmas we spent in the old house.",
       "year": 1977,
-      "month": 12,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -67,8 +67,8 @@
       "id": 8,
       "image_url": "https://picsum.photos/seed/upload-8/800/600",
       "title": "Summer at the lake cabin",
+      "description": "Long days on the water and evenings around the fire swapping stories. Tom taught everyone to fish, though only Linda ever caught anything. It rained for four days straight in the second week. We played cards by lamplight and nobody minded at all. The cabin smelled of woodsmoke for months afterwards. We went back every summer for the next ten years.",
       "year": 1980,
-      "month": 7,
       "submitter": "Tom",
       "location": "Nigeria"
     },
@@ -76,8 +76,8 @@
       "id": 9,
       "image_url": "https://picsum.photos/seed/upload-9/800/600",
       "title": "Linda's sweet sixteen",
+      "description": "Friends, a homemade cake and a dress she'd been planning for months. The music was far too loud for the neighbours.",
       "year": 1983,
-      "month": 4,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -85,8 +85,8 @@
       "id": 10,
       "image_url": "https://picsum.photos/seed/upload-10/800/600",
       "title": "High school graduation",
+      "description": "Caps in the air, and the whole family in the front row cheering too loudly. Linda gave a short speech and only looked at her notes once. Afterwards we went for jollof rice at her favourite place.",
       "year": 1985,
-      "month": 6,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -94,8 +94,8 @@
       "id": 11,
       "image_url": "https://picsum.photos/seed/upload-11/800/600",
       "title": "Linda and James meet at college",
+      "description": "They met in the library queue and argued about a book for an hour. James was sure he was right. He wasn't. They agreed to meet the next day to settle it, and somehow never stopped meeting.",
       "year": 1988,
-      "month": 10,
       "submitter": "James",
       "location": "Nigeria"
     },
@@ -103,8 +103,8 @@
       "id": 12,
       "image_url": "https://picsum.photos/seed/upload-12/800/600",
       "title": "Backpacking through Europe",
+      "description": "One rucksack each, a stack of postcards and trains to everywhere. They slept on more station benches than they'd like to admit. In Rome, James lost his passport for a day and found it in his own sock. Linda filled two notebooks with sketches. Every postcard they sent home arrived after they did. They still say it was the best summer of their lives. The rucksacks are in the attic, still dusty from the road.",
       "year": 1990,
-      "month": 7,
       "submitter": "James",
       "location": "Nigeria"
     },
@@ -112,8 +112,8 @@
       "id": 13,
       "image_url": "https://picsum.photos/seed/upload-13/800/600",
       "title": "Linda and James get married",
+      "description": "A bright, noisy wedding with both families on the dance floor. The rain held off until the very last song. Grandma Rose danced with everyone. James's speech made his father cry, which nobody had ever seen before.",
       "year": 1992,
-      "month": 5,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -121,8 +121,8 @@
       "id": 14,
       "image_url": "https://picsum.photos/seed/upload-14/800/600",
       "title": "Moving to the city",
+      "description": "A small flat, a long list of boxes and the first night with takeaway on the floor. The lift was broken, so everything went up four flights of stairs.",
       "year": 1994,
-      "month": 2,
       "submitter": "James",
       "location": "Nigeria"
     },
@@ -130,8 +130,8 @@
       "id": 15,
       "image_url": "https://picsum.photos/seed/upload-15/800/600",
       "title": "Emma is born",
+      "description": "Born just before dawn, and everyone agreed she had Grandma's eyes. Linda and James didn't sleep for a week. Grandpa visited every single day with something new for her. Rose knitted a blanket in green, the family colour. Emma still has it.",
       "year": 1996,
-      "month": 11,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -139,8 +139,8 @@
       "id": 16,
       "image_url": "https://picsum.photos/seed/upload-16/800/600",
       "title": "New Year's Eve, 1999",
+      "description": "Everyone stayed up to see the new millennium in together. James had filled the bathtub with water in case the computers failed. They didn't. Emma fell asleep at eleven and we woke her for the countdown. There were fireworks over the whole city. Rose said it was the first New Year she'd ever stayed awake for. We ate leftover cake for breakfast. Nobody wanted to go home.",
       "year": 1999,
-      "month": 12,
       "submitter": "James",
       "location": "Nigeria"
     },
@@ -148,8 +148,8 @@
       "id": 17,
       "image_url": "https://picsum.photos/seed/upload-17/800/600",
       "title": "Grandma and Grandpa's 40th anniversary",
+      "description": "Forty years on, they cut the cake together just as they had in 1962. Grandpa wore a suit that finally fitted. Linda found the old wedding photos and passed them round the table. There was a lot of laughing at the hairstyles.",
       "year": 2002,
-      "month": 6,
       "submitter": "Emma",
       "location": "Nigeria"
     },
@@ -157,8 +157,8 @@
       "id": 18,
       "image_url": "https://picsum.photos/seed/upload-18/800/600",
       "title": "Emma's first piano recital",
+      "description": "Nervous hands and a perfect bow at the end. Emma played two pieces and didn't miss a note. We were all so proud.",
       "year": 2005,
-      "month": 4,
       "submitter": "Linda",
       "location": "Nigeria"
     },
@@ -166,8 +166,8 @@
       "id": 19,
       "image_url": "https://picsum.photos/seed/upload-19/800/600",
       "title": "Family trip to Japan",
+      "description": "Temples, trains and noodles at midnight. Emma kept the tickets. James tried to speak Japanese everywhere and mostly got directions to the station. We climbed to a shrine at sunrise and watched the city wake up. Linda bought far too many bowls. Emma says it's the trip she thinks about most.",
       "year": 2008,
-      "month": 3,
       "submitter": "Emma",
       "location": "Nigeria"
     },
@@ -175,8 +175,8 @@
       "id": 20,
       "image_url": "https://picsum.photos/seed/upload-20/800/600",
       "title": "Grandma Rose turns 70",
+      "description": "Four generations around one table, and she blew out every candle. Emma read a letter she had written for her. The cousins sang, badly. Rose said it was the best birthday she had ever had. Then she asked when the next one was.",
       "year": 2010,
-      "month": 8,
       "submitter": "Emma",
       "location": "Nigeria"
     }

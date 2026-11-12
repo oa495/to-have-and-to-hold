@@ -1,0 +1,85 @@
+/* A personal entry: the green upload patch from the timeline holding the
+   photo and its details, centred on the screen, with the description on a
+   smaller text patch laid over its right edge. */
+.personal-entry {
+  /* cqi, not %, so the widths are plain lengths that border-width (in
+     the description patch) accepts. The 48cqi cap leaves room on the
+     right for the description patch, which hangs past the photo patch. */
+  container-type: inline-size;
+  --entry-width: min(100cqi, 80dvh, 48cqi);
+  --desc-width: calc(var(--entry-width) * 0.6);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100dvh - 16px); /* the body's default 8px margins */
+  font-family: 'Lora', Helvetica, sans-serif;
+}
+
+/* Percent insets match .quilt-patch in Timeline.css so content keeps to
+   the stitches at any size. */
+.personal-entry-photo {
+  position: relative;
+  container-type: inline-size;
+  flex: none;
+  width: var(--entry-width);
+  aspect-ratio: 1004 / 1022;
+  margin: 0;
+  background: url("/patches/patch-two.png") center / 100% 100% no-repeat;
+  color: #fbf8ee;
+
+  /* Contain, not cover: the whole photo shows, with patch around it. */
+  img {
+    position: absolute;
+    inset: 7% 7% 30% 6%;
+    width: 87%;
+    height: 63%;
+    object-fit: contain;
+    filter: sepia(0.25) contrast(0.9);
+  }
+}
+
+/* The description on the plain text patch, over the photo patch's right
+   edge and level with the caption band at its bottom. It is absolute so the
+   photo patch alone is centred: 50% is the photo patch's centre line, and
+   --photo-height / 2 below that is its bottom edge. The PNG is 9-sliced with
+   border-image so its stitching and corners keep their size however tall
+   the text makes the patch; the border widths (a share of the patch width)
+   are also what keep the text inside the stitching. Slices are in the PNG's
+   pixels (760x407). */
+.personal-entry-desc {
+  font-family: 'Lato';
+  --photo-height: calc(var(--entry-width) * 1022 / 1004);
+  position: absolute;
+  z-index: 1;
+  bottom: calc(50% - var(--photo-height) / 2 + var(--photo-height) * 0.02);
+  left: calc(50% + var(--entry-width) / 2 - var(--desc-width) * 0.75);
+  box-sizing: border-box;
+  width: var(--desc-width);
+  border-style: solid;
+  border-width: calc(var(--desc-width) * 45 / 760);
+  border-image: url("/patches/text-only-patch-2.png") 45 fill / 1 / 0 stretch;
+  padding: 0.75em 1em;
+  color: #0d0d0d;
+
+  p {
+    max-width: 60ch;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+/* Too narrow to sit side by side: the description goes under the photo at
+   full width. */
+@media (max-width: 700px) {
+  .personal-entry {
+    --entry-width: min(100cqi, 80dvh);
+    --desc-width: var(--entry-width);
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .personal-entry-desc {
+    position: static;
+  }
+}

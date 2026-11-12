@@ -2,10 +2,15 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
 import { uploadPath } from '../uploadSlug.js'
+import { yearFromHash, yearHash } from '../yearHash.js'
 import './PatchText.css'
 import './Timeline.css'
 
 const DRAG_THRESHOLD = 5
+
+// How long scrolling must settle before the URL hash follows the year. Keeps
+// fast drags under Safari's limit on history updates.
+const URL_SYNC_DELAY = 250
 
 // Grid cells [columns, rows] a block covers, by event significance (1-5).
 const SIGNIFICANCE_SPANS = { 1: [1, 1], 2: [2, 1], 3: [2, 2], 4: [3, 2], 5: [3, 3] }
@@ -141,37 +146,76 @@ function Timeline({ uploads, events }) {
     return () => scroller.removeEventListener('wheel', onWheel)
   }, [])
 
-  // Track which year is under the middle of the screen, once per frame.
+  // Track which year is under the middle of the screen, once per frame, and
+  // put it in the URL hash once scrolling settles.
   useEffect(() => {
     const scroller = scrollerRef.current
     let frame = 0
+    let urlTimer = 0
     let shown
     function update() {
       frame = 0
       const middle = window.innerWidth / 2
+      const yearEls = scroller.querySelectorAll('.timeline-year')
       let year = null
-      for (const el of scroller.querySelectorAll('.timeline-year')) {
+      for (const el of yearEls) {
         if (el.getBoundingClientRect().left > middle) break
         year = Number(el.dataset.year)
       }
+      // The last year may never reach the middle, so scrolled right to the
+      // end shows it.
+      const atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 1
+      if (atEnd && yearEls.length) year = Number(yearEls[yearEls.length - 1].dataset.year)
       // Only touch React when the year actually changes.
       if (year !== shown) {
         shown = year
         setCurrentYear(year)
       }
     }
+    // Replace rather than push, so scrolling doesn't fill the back button, and
+    // keep the router's history state. On the title the hash is cleared.
+    function syncUrl() {
+      if (shown === undefined) return
+      const hash = shown === null ? '' : yearHash(shown)
+      if (window.location.hash === hash) return
+      const { pathname, search } = window.location
+      window.history.replaceState(window.history.state, '', pathname + search + hash)
+    }
+    // Only scrolling moves the URL: the first update() below runs before any
+    // hash year has been scrolled to, and mustn't wipe it.
     function onScroll() {
       if (!frame) frame = requestAnimationFrame(update)
+      clearTimeout(urlTimer)
+      urlTimer = setTimeout(syncUrl, URL_SYNC_DELAY)
     }
     update()
     scroller.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
     return () => {
       cancelAnimationFrame(frame)
+      clearTimeout(urlTimer)
       scroller.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
     }
   }, [])
+
+  // Scroll to the year in the URL hash (/timeline#1994): on load, once that
+  // year's quilt has rendered, and whenever the hash is edited by hand
+  // (syncUrl above doesn't fire hashchange, so no loop). The quilt is
+  // centred, so it's the one the current-year label (above) picks.
+  useEffect(() => {
+    const scroller = scrollerRef.current
+    function scrollToHashYear() {
+      const year = yearFromHash(window.location.hash)
+      const el = scroller.querySelector(`.timeline-year[data-year="${year}"]`)
+      if (!el) return
+      const { left, width } = el.getBoundingClientRect()
+      scroller.scrollLeft += left + width / 2 - window.innerWidth / 2
+    }
+    scrollToHashYear()
+    window.addEventListener('hashchange', scrollToHashYear)
+    return () => window.removeEventListener('hashchange', scrollToHashYear)
+  }, [years.length])
 
   // Click-and-drag panning for mouse; touch already scrolls natively.
   function handlePointerDown(e) {

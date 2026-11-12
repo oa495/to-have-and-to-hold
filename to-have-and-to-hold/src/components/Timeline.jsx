@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
 import { shownLocation } from '../location.js'
+import { patchStyle, pickEvents, wobble } from '../quiltLayout.js'
 import { uploadPath } from '../uploadSlug.js'
 import { yearFromHash, yearHash } from '../yearHash.js'
 import './PatchText.css'
@@ -16,47 +17,6 @@ const URL_SYNC_DELAY = 250
 // Grid cells [columns, rows] a block covers, by event significance (1-5).
 const SIGNIFICANCE_SPANS = { 1: [1, 1], 2: [2, 1], 3: [2, 2], 4: [3, 2], 5: [3, 3] }
 const UPLOAD_SPAN = [3, 3]
-
-// A repeatable value in [-1, 1] per seed, so patches sit the same way every load.
-function wobble(seed) {
-  const x = Math.sin(seed * 12.9898) * 43758.5453
-  return (x - Math.floor(x)) * 2 - 1
-}
-
-// Grid placement plus a fixed offset and tilt so patches sit loosely. Kept
-// small vertically so patches in the top and bottom rows stay on screen.
-function patchStyle([cols, rows], seed, tilt) {
-  return {
-    gridColumn: `span ${cols}`,
-    gridRow: `span ${rows}`,
-    transform: `translate(${wobble(seed) * 14}px, ${wobble(seed + 1) * 6}px) rotate(${wobble(seed + 2) * tilt}deg)`,
-  }
-}
-
-const EVENTS_PER_YEAR = 4
-
-// A year's events, cut to EVENTS_PER_YEAR: one per significance level from
-// the top down, so each year shows a spread of patch sizes, topped up with
-// the most significant of the rest. Within a level, events with a photo come
-// first so photo patches show at every size. Kept in id order.
-function pickEvents(yearEvents) {
-  const bySignificance = [...yearEvents].sort(
-    (a, b) =>
-      (b.significance ?? 1) - (a.significance ?? 1) || Boolean(b.image_url) - Boolean(a.image_url),
-  )
-  const levels = new Set()
-  const picked = bySignificance.filter((e) => {
-    const level = e.significance ?? 1
-    if (levels.has(level)) return false
-    levels.add(level)
-    return true
-  })
-  for (const e of bySignificance) {
-    if (picked.length >= EVENTS_PER_YEAR) break
-    if (!picked.includes(e)) picked.push(e)
-  }
-  return picked.slice(0, EVENTS_PER_YEAR).sort((a, b) => a.id - b.id)
-}
 
 // One quilt per year from the earliest to the latest year in either dataset.
 // The year's events are its blocks; its uploads are stitched in among them,

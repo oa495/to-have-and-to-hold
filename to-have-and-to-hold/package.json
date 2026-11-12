@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "node --test src",
+    "preview": "vite preview",
+    "resize-uploads": "sh scripts/resize-uploads.sh"
   },
   "dependencies": {
     "react": "^19.2.8",

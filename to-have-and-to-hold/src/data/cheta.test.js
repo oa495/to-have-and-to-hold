@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { fetchArchiveRecords, recordToEvent, recordToUpload } from './cheta.js'
+import { fetchArchiveRecords, findPlace, recordToEvent } from './cheta.js'
 
 // Shaped like a real record from /api/records?depth=1.
 const record = {
@@ -38,17 +38,87 @@ test('an unexpanded file id (depth=0) counts as no image', () => {
 
 test('records without a date are dropped', () => {
   assert.equal(recordToEvent({ ...record, dateRange: null }), null)
-  assert.equal(recordToUpload({ ...record, dateRange: null }), null)
 })
 
-test('recordToUpload uses authors as submitter, falling back to Anonymous', () => {
-  const upload = recordToUpload(record)
-  assert.equal(upload.submitter, 'Tech.Felix')
-  assert.equal(upload.description, 'A front view of the UNN Enugu campus.')
-  assert.equal(upload.year, 2019)
-  const noAuthor = recordToUpload({ ...record, authors: null, file: [] })
-  assert.equal(noAuthor.submitter, 'Anonymous')
-  assert.match(noAuthor.image_url, /picsum\.photos/)
+// Shaped like the archive 19 records: no location, a "Significance:" line.
+function headline(title, body, label, extra = {}) {
+  return {
+    id: 8,
+    title,
+    description: `${body}\n\nSignificance: ${label}`,
+    file: [],
+    dateRange: '1993-06-12T00:00:00.000Z',
+    location: null,
+    ...extra,
+  }
+}
+
+test('the significance label sets the patch size: 5 / 3 / 1', () => {
+  const size = (label) => recordToEvent(headline('T', 'Body text.', label)).significance
+  assert.equal(size('Major turning point in Nigeria’s political, social, economic, or cultural history.'), 5)
+  assert.equal(size('Significant development that shaped national affairs.'), 3)
+  assert.equal(size('Important event or episode that helps document the period.'), 1)
+  assert.equal(size('Something unexpected'), 1)
+  assert.equal(recordToEvent({ ...record, id: 8 }).significance, 1)
+})
+
+test('the shown description drops the significance line', () => {
+  const event = recordToEvent(
+    headline('2001 Jos riots', 'Religious violence between Christians and Muslims in Jos', 'Major turning point.'),
+  )
+  assert.equal(event.desc, 'Religious violence between Christians and Muslims in Jos')
+})
+
+test('a description that only repeats the title is left empty', () => {
+  const title = 'Nigerian Military Rulers Annul Election'
+  assert.equal(recordToEvent(headline(title, title, 'Major turning point.')).desc, '')
+  assert.equal(
+    recordToEvent(headline(title, `Contemporary headline record: ${title}.`, 'Major turning point.')).desc,
+    '',
+  )
+})
+
+test('a missing location is taken from the first place named in the title', () => {
+  const fromTitle = recordToEvent(
+    headline('Sharia Law Formally Established in Zamfara State', 'x', 'Important event.'),
+  )
+  assert.equal(fromTitle.location, 'Zamfara')
+})
+
+test('places named only in the description are ignored', () => {
+  const event = recordToEvent(
+    headline('Democracy Faces Test as Nigerian Vote Nears', 'LAGOS, Nigeria, Dec. 27—Nigeria’s…', 'Important event.'),
+  )
+  assert.equal(event.location, null)
+})
+
+test('HTML character references in text are decoded', () => {
+  const event = recordToEvent(
+    headline('Rock &amp; Roll', 'LAGOS, Nigeria, Dec. 27&#8212;the &#8220;vote&#8221; &#x2014; &bogus;', 'Important event.'),
+  )
+  assert.equal(event.title, 'Rock & Roll')
+  assert.equal(event.desc, 'LAGOS, Nigeria, Dec. 27—the “vote” — &bogus;')})
+
+test('a description equal to the title once decoded is left empty', () => {
+  const event = recordToEvent(headline('Rock & Roll', 'Rock &amp; Roll', 'Important event.'))
+  assert.equal(event.desc, '')
+})
+
+test("a record's own location wins over a matched one", () => {
+  const event = recordToEvent(
+    headline('Militants attack in Lagos', 'x', 'Important event.', { location: 'Warri and Port Harcourt' }),
+  )
+  assert.equal(event.location, 'Warri and Port Harcourt')
+})
+
+test('findPlace matches whole names only, ignoring case', () => {
+  assert.equal(findPlace('NIGERIA QUELLS RIOTS IN KANO'), 'Kano')
+  assert.equal(findPlace('Strikes spread in Port Harcourt and Lagos'), 'Port Harcourt')
+  // "Nigeria" and "Niger" (the country) aren't places on the list.
+  assert.equal(findPlace("Niger: Niger's Mainassara Visits Abacha"), null)
+  assert.equal(findPlace('Nigerian Military Ruler Assumes Absolute Power'), null)
+  // "Imo" inside another word doesn't count.
+  assert.equal(findPlace('Immobile economy'), null)
 })
 
 test('fetchArchiveRecords filters by archive and follows every page', async () => {

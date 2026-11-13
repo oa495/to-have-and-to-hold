@@ -7,7 +7,11 @@
      right for the description patch, which hangs past the photo patch. */
   container-type: inline-size;
   --entry-width: min(100cqi, 80dvh, 48cqi);
-  --desc-width: calc(var(--entry-width) * 0.6);
+  /* The description patch's width as a share of the photo patch, and how
+     much of it lies over the photo patch; the rest hangs past its edge. */
+  --desc-share: 0.6;
+  --desc-overlap: 0.25;
+  --desc-width: calc(var(--entry-width) * var(--desc-share));
   position: relative;
   display: flex;
   align-items: center;
@@ -37,6 +41,12 @@
     object-fit: contain;
     filter: sepia(0.25) contrast(0.9);
   }
+
+  /* The caption stops short of the description patch, plus a small gap,
+     so the patch never covers the title. Percent of the photo patch. */
+  figcaption {
+    right: calc(var(--desc-share) * var(--desc-overlap) * 100% + 3%);
+  }
 }
 
 /* The description on the plain text patch, over the photo patch's right
@@ -53,7 +63,7 @@
   position: absolute;
   z-index: 1;
   bottom: calc(50% - var(--photo-height) / 2 + var(--photo-height) * 0.02);
-  left: calc(50% + var(--entry-width) / 2 - var(--desc-width) * 0.75);
+  left: calc(50% + var(--entry-width) / 2 - var(--desc-width) * var(--desc-overlap));
   box-sizing: border-box;
   width: var(--desc-width);
   border-style: solid;
@@ -81,5 +91,10 @@
 
   .personal-entry-desc {
     position: static;
+  }
+
+  /* Nothing overlaps the caption here, so it takes the full band again. */
+  .personal-entry-photo figcaption {
+    right: 7%;
   }
 }

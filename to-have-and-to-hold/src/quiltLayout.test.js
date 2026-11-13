@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { MAX_SHIFT_X, MAX_SHIFT_Y, patchOffset, patchStyle, pickEvents } from './quiltLayout.js'
+import { MAX_SHIFT_X, MAX_SHIFT_Y, buildYears, patchOffset, patchStyle, pickEvents } from './quiltLayout.js'
 
 // Like the archive: three events a year, one of each size, ids in a fixed
 // size order within every year.
@@ -53,4 +53,38 @@ test('patchStyle spans the grid and nudges in cell units', () => {
   assert.equal(style.gridColumn, 'span 3')
   assert.equal(style.gridRow, 'span 2')
   assert.match(style.transform, /^translate\(calc\(var\(--cell\) \* -?[\d.e-]+\), calc\(var\(--cell\) \* -?[\d.e-]+\)\) rotate\(-?[\d.e-]+deg\)$/)
+})
+
+test('years run newest first, back to the earliest, gaps included', () => {
+  const events = [
+    { id: 1, year: 1960 },
+    { id: 2, year: 2009 },
+    { id: 3, year: 2007 },
+  ]
+  const uploads = [{ id: 10, year: 2003 }]
+  const years = buildYears(uploads, events).map((y) => y.year)
+  assert.equal(years[0], 2009)
+  assert.equal(years.at(-1), 1960)
+  assert.equal(years.length, 50)
+  assert.deepEqual(years.slice(0, 3), [2009, 2008, 2007])
+})
+
+test("each year holds that year's events and uploads", () => {
+  const events = [
+    { id: 1, year: 2008, significance: 5 },
+    { id: 2, year: 2008, significance: 1 },
+    { id: 3, year: 2007, significance: 3 },
+  ]
+  const uploads = [{ id: 10, year: 2008 }]
+  const [y2008, y2007] = buildYears(uploads, events)
+  assert.equal(y2008.year, 2008)
+  assert.deepEqual(
+    y2008.items.map((i) => (i.type === 'upload' ? `u${i.upload.id}` : `e${i.event.id}`)).sort(),
+    ['e1', 'e2', 'u10'],
+  )
+  assert.deepEqual(y2007.items.map((i) => i.event.id), [3])
+})
+
+test('no events or uploads gives no years', () => {
+  assert.deepEqual(buildYears([], []), [])
 })

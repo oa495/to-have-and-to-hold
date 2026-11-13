@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
 import { shownLocation } from '../location.js'
-import { patchStyle, pickEvents, wobble } from '../quiltLayout.js'
+import { buildYears, patchStyle, wobble } from '../quiltLayout.js'
 import { uploadPath } from '../uploadSlug.js'
 import { yearFromHash, yearHash } from '../yearHash.js'
 import './PatchText.css'
@@ -18,27 +18,6 @@ const URL_SYNC_DELAY = 250
 const SIGNIFICANCE_SPANS = { 1: [1, 1], 2: [2, 1], 3: [2, 2], 4: [3, 2], 5: [3, 3] }
 const UPLOAD_SPAN = [3, 3]
 
-// One quilt per year from the earliest to the latest year in either dataset.
-// The year's events are its blocks; its uploads are stitched in among them,
-// spread evenly through the sequence.
-function buildYears(uploads, events) {
-  const years = [...uploads, ...events].map((item) => item.year)
-  const result = []
-  for (let year = Math.min(...years); year <= Math.max(...years); year++) {
-    const yearUploads = uploads.filter((u) => u.year === year)
-    const items = pickEvents(events.filter((e) => e.year === year)).map((event) => ({
-      type: 'event',
-      event,
-    }))
-    const step = Math.floor(items.length / (yearUploads.length + 1))
-    yearUploads.forEach((upload, i) => {
-      items.splice(step * (i + 1) + i, 0, { type: 'upload', upload })
-    })
-    result.push({ year, items })
-  }
-  return result
-}
-
 function UploadPatch({ upload }) {
   // The author label's tilt: 2-4deg either way, never near straight.
   const w = wobble(upload.id * 3)
@@ -53,7 +32,7 @@ function UploadPatch({ upload }) {
             <div className="quilt-patch-meta">
               <p className="patch-text-meta">
                 {shownLocation(upload.location) && `${shownLocation(upload.location)}, `}
-                <time dateTime={String(upload.year)}>{upload.year}</time>
+                <time dateTime={String(upload.year)}>{upload.date_display ?? upload.year}</time>
               </p>
               <span
                 className="author-patch"

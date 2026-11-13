@@ -1,5 +1,5 @@
-// Timeline events from the Cheta archive (https://www.cheta.africa), mapped
-// to the event shape the timeline uses. Uploads are local (uploads.json).
+// Timeline events and uploads from the Cheta archive
+// (https://www.cheta.africa), mapped to the shapes the timeline uses.
 import placeList from './nigeria-places.json' with { type: 'json' }
 
 const { places } = placeList
@@ -10,6 +10,8 @@ const API = '/cheta-api'
 
 // A Brief History of Nigerian Headlines.
 export const EVENTS_ARCHIVE_ID = 19
+// To Have and To Hold Workshop: participants' photos.
+export const UPLOADS_ARCHIVE_ID = 20
 
 // One regex over the fixed place list, built once. Longer names come first
 // so "Port Harcourt" wins over a shorter name at the same spot.
@@ -28,12 +30,6 @@ export function findPlace(text) {
   return match ? PLACE_NAMES.get(match[1].toLowerCase()) : null
 }
 
-// Most records have no file yet. Every other one gets a placeholder photo
-// so the quilt still mixes photo and text patches.
-function placeholderImage(id, width, height) {
-  return `https://picsum.photos/seed/cheta-${id}/${width}/${height}`
-}
-
 function recordYear(record) {
   if (!record.dateRange) return null
   const year = new Date(record.dateRange).getUTCFullYear()
@@ -41,9 +37,16 @@ function recordYear(record) {
 }
 
 // With depth=1 each file is an expanded media object; with depth=0 it's an id.
+// File names can contain spaces ("IMG 2.JPG"), so the URL is normalised:
+// spaces become %20, anything already escaped is left alone.
 function recordImage(record) {
   const file = record.file?.find((f) => typeof f === 'object' && f?.url)
-  return file?.url ?? null
+  if (!file) return null
+  try {
+    return new URL(file.url).href
+  } catch {
+    return null
+  }
 }
 
 // Archive 19 descriptions end with "Significance: <label>". The label's
@@ -89,7 +92,8 @@ export function recordToEvent(record) {
   const { body, significance } = splitDescription(record.description)
   return {
     id: record.id,
-    image_url: recordImage(record) ?? (record.id % 2 ? placeholderImage(record.id, 600, 400) : null),
+    // Events without a file are text-only patches.
+    image_url: recordImage(record),
     title,
     desc: eventDesc(body, title),
     year,
@@ -97,6 +101,26 @@ export function recordToEvent(record) {
     // Only the title: places in descriptions are often datelines or asides,
     // not where the event happened.
     location: record.location || findPlace(title),
+  }
+}
+
+// A participant's photo. Records without a date can't be placed and ones
+// without a photo have nothing to show, so both map to null. The year places
+// the photo and goes in its URL; date_display is what's shown ("early
+// 2000s"), falling back to the year.
+export function recordToUpload(record) {
+  const year = recordYear(record)
+  const image_url = recordImage(record)
+  if (year === null || !image_url) return null
+  return {
+    id: record.id,
+    image_url,
+    title: decodeEntities(record.title),
+    description: decodeEntities(record.description).trim(),
+    year,
+    date_display: record.dateDisplay?.trim() || String(year),
+    submitter: record.authors?.trim() || 'Anonymous',
+    location: record.location || null,
   }
 }
 
@@ -118,15 +142,88 @@ export async function fetchArchiveRecords(archiveId, fetchImpl = fetch) {
   }
 }
 
-// Fetched once per page load.
-let cache
+// A copy of each archive's mapped items is kept in the browser's
+// localStorage, so a return visit shows the timeline at once while a fresh
+// copy loads. Bump CACHE_VERSION whenever the event or upload shape changes,
+// so old copies are dropped rather than shown.
+const CACHE_VERSION = 1
+
+function cacheKey(archiveId) {
+  return `cheta:v${CACHE_VERSION}:archive:${archiveId}`
+}
+
+// localStorage can be missing (Node, tests) or throw (private browsing,
+// blocked storage); without it nothing is cached and everything still works.
+function browserStorage() {
+  try {
+    return globalThis.localStorage ?? null
+  } catch {
+    return null
+  }
+}
+
+// The saved items for an archive, or null if there's no usable copy.
+export function readCached(archiveId, storage = browserStorage()) {
+  try {
+    const saved = JSON.parse(storage?.getItem(cacheKey(archiveId)) ?? 'null')
+    return Array.isArray(saved?.items) ? saved.items : null
+  } catch {
+    return null
+  }
+}
+
+export function saveCached(archiveId, items, storage = browserStorage()) {
+  try {
+    storage?.setItem(cacheKey(archiveId), JSON.stringify({ savedAt: Date.now(), items }))
+  } catch {
+    // Full or blocked storage: carry on without saving.
+  }
+}
+
+// Fresh items from Cheta, saved for next time. The saved copy is used
+// instead when Cheta fails, or returns nothing where we had something (an
+// archive set to private reads as empty). Only throws with no saved copy.
+export async function fetchWithCache(archiveId, toItem, { fetchImpl, storage = browserStorage() } = {}) {
+  const cached = readCached(archiveId, storage)
+  let fresh
+  try {
+    const records = await fetchArchiveRecords(archiveId, fetchImpl ?? globalThis.fetch)
+    fresh = records.map(toItem).filter(Boolean)
+  } catch (error) {
+    if (!cached) throw error
+    console.warn(`Cheta archive ${archiveId}: showing saved copy`, error)
+    return cached
+  }
+  if (!fresh.length && cached?.length) return cached
+  saveCached(archiveId, fresh, storage)
+  return fresh
+}
+
+// Each archive is fetched once per page load and shared by every page that
+// asks for it. A failed load is forgotten so the next visit retries.
+const loads = new Map()
+function loadArchive(archiveId, toItem) {
+  if (!loads.has(archiveId)) {
+    const load = fetchWithCache(archiveId, toItem)
+    load.catch(() => loads.delete(archiveId))
+    loads.set(archiveId, load)
+  }
+  return loads.get(archiveId)
+}
+
 export function loadEvents() {
-  cache ??= fetchArchiveRecords(EVENTS_ARCHIVE_ID).then((records) =>
-    records.map(recordToEvent).filter(Boolean),
-  )
-  // Let a failed load be retried on the next visit.
-  cache.catch(() => {
-    cache = undefined
-  })
-  return cache
+  return loadArchive(EVENTS_ARCHIVE_ID, recordToEvent)
+}
+
+export function loadUploads() {
+  return loadArchive(UPLOADS_ARCHIVE_ID, recordToUpload)
+}
+
+// The saved copies, for showing something before the fresh load finishes.
+export function cachedEvents() {
+  return readCached(EVENTS_ARCHIVE_ID)
+}
+
+export function cachedUploads() {
+  return readCached(UPLOADS_ARCHIVE_ID)
 }

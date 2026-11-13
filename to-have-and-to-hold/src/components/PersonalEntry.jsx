@@ -12,7 +12,7 @@ function PersonalEntry({ upload }) {
           <div>
             <p className="patch-text-meta">
               {shownLocation(upload.location) && `${shownLocation(upload.location)}, `}
-              <time dateTime={String(upload.year)}>{upload.year}</time>
+              <time dateTime={String(upload.year)}>{upload.date_display ?? upload.year}</time>
             </p>
             <p className="patch-text-meta">{upload.submitter}</p>
           </div>

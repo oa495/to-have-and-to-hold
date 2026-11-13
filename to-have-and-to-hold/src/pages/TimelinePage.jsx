@@ -1,11 +1,11 @@
 import Timeline from '../components/Timeline.jsx'
-import { uploads } from '../data/uploads.json'
 import { useEvents } from '../data/useEvents.js'
+import { useUploads } from '../data/useUploads.js'
 
 function TimelinePage() {
-  // Events come from Cheta; until they load (or if they fail) the timeline
-  // shows just the uploads.
+  // Both come from Cheta and load side by side; each shows once it arrives.
   const { events } = useEvents()
+  const { uploads } = useUploads()
   return <Timeline uploads={uploads} events={events} />
 }
 

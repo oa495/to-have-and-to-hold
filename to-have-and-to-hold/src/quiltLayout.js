@@ -60,3 +60,25 @@ export function pickEvents(yearEvents) {
   const order = (e) => wobble(e.id * 11 + 5)
   return picked.slice(0, EVENTS_PER_YEAR).sort((a, b) => order(a) - order(b))
 }
+
+// One quilt per year, newest first: from the latest year in either dataset
+// back to the earliest, including empty years in between. The year's events
+// are its blocks; its uploads are stitched in among them, spread evenly
+// through the sequence.
+export function buildYears(uploads, events) {
+  const years = [...uploads, ...events].map((item) => item.year)
+  const result = []
+  for (let year = Math.max(...years); year >= Math.min(...years); year--) {
+    const yearUploads = uploads.filter((u) => u.year === year)
+    const items = pickEvents(events.filter((e) => e.year === year)).map((event) => ({
+      type: 'event',
+      event,
+    }))
+    const step = Math.floor(items.length / (yearUploads.length + 1))
+    yearUploads.forEach((upload, i) => {
+      items.splice(step * (i + 1) + i, 0, { type: 'upload', upload })
+    })
+    result.push({ year, items })
+  }
+  return result
+}

@@ -278,3 +278,61 @@ h1 text {
     filter: sepia(0.25) contrast(0.9);
   }
 }
+
+/* An event opens in full over the timeline. The button covers the whole
+   patch so a click anywhere on it opens the event; the patch grows on hover
+   or keyboard focus, like an upload's. */
+.event-card {
+  transition: scale 0.2s ease-out;
+
+  &:hover,
+  &:has(.event-card-open:focus-visible) {
+    scale: 1.04;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.event-card-open {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* The full event, laid out as the upload page: full screen on the quilted
+   page background. The timeline is hidden (not removed, so it keeps its
+   scroll position) and the dialog is see-through, so the body's quilt shows
+   as it does behind an upload. 8px padding stands in for the body margins
+   the entry's height allows for. */
+.event-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px;
+  border: 0;
+  background: none;
+  overflow-y: auto;
+
+  &::backdrop {
+    background: none;
+  }
+
+  .back-link {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+body:has(.event-dialog[open]) .timeline {
+  visibility: hidden;
+}

@@ -1,7 +1,7 @@
 import { shownLocation } from '../location.js'
 import './PatchText.css'
 
-function EventCard({ event }) {
+function EventCard({ event, onOpen }) {
   // Small blocks only have room for the image and title.
   const showDetails = (event.significance ?? 1) >= 3
   const location = shownLocation(event.location)
@@ -19,6 +19,13 @@ function EventCard({ event }) {
           <p className="patch-text-meta">{location}</p>
         )}
       </div>
+      {/* Over the whole patch, so a click anywhere opens the full event. */}
+      <button
+        type="button"
+        className="event-card-open"
+        aria-label={`Read more: ${event.title}`}
+        onClick={() => onOpen(event)}
+      />
     </article>
   )
 }

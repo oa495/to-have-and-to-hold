@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import EventCard from './EventCard.jsx'
+import PersonalEntry from './PersonalEntry.jsx'
 import { shownLocation } from '../location.js'
 import { buildYears, patchStyle, wobble } from '../quiltLayout.js'
 import { uploadPath } from '../uploadSlug.js'
 import { yearFromHash, yearHash } from '../yearHash.js'
 import './PatchText.css'
 import './Timeline.css'
+import '../pages/UploadPage.css'
 
 const DRAG_THRESHOLD = 5
 
@@ -48,7 +50,7 @@ function UploadPatch({ upload }) {
   )
 }
 
-function QuiltBlock({ event }) {
+function QuiltBlock({ event, onOpen }) {
   const significance = event.significance ?? 1
   return (
     <li
@@ -59,7 +61,7 @@ function QuiltBlock({ event }) {
         zIndex: significance,
       }}
     >
-      <EventCard event={event} />
+      <EventCard event={event} onOpen={onOpen} />
     </li>
   )
 }
@@ -70,6 +72,9 @@ function Timeline({ uploads, events }) {
   const didDragRef = useRef(false)
   // The year whose quilt is under the middle of the screen; null on the title.
   const [currentYear, setCurrentYear] = useState(null)
+  // The event shown in full over the timeline; null when none is open.
+  const [openEvent, setOpenEvent] = useState(null)
+  const dialogRef = useRef(null)
 
   const years = buildYears(uploads, events)
 
@@ -157,6 +162,20 @@ function Timeline({ uploads, events }) {
     return () => window.removeEventListener('hashchange', scrollToHashYear)
   }, [years.length])
 
+  // Open as a modal: it takes focus, Esc closes it, and the timeline
+  // underneath keeps its scroll position.
+  useEffect(() => {
+    if (openEvent) dialogRef.current.showModal()
+  }, [openEvent])
+
+  // A click on the empty space round the entry (the dialog, or the entry's
+  // full-screen wrapper) closes it; clicks on the patches don't.
+  function handleDialogClick(e) {
+    if (e.target === e.currentTarget || e.target.classList.contains('personal-entry')) {
+      dialogRef.current.close()
+    }
+  }
+
   // Click-and-drag panning for mouse; touch already scrolls natively.
   function handlePointerDown(e) {
     if (e.pointerType !== 'mouse' || e.button !== 0) return
@@ -195,6 +214,7 @@ function Timeline({ uploads, events }) {
   }
 
   return (
+    <>
     <div
       className="timeline"
       ref={scrollerRef}
@@ -253,7 +273,7 @@ function Timeline({ uploads, events }) {
                 item.type === 'upload' ? (
                   <UploadPatch upload={item.upload} key={`upload-${item.upload.id}`} />
                 ) : (
-                  <QuiltBlock event={item.event} key={item.event.id} />
+                  <QuiltBlock event={item.event} onOpen={setOpenEvent} key={item.event.id} />
                 ),
               )}
             </ol>
@@ -269,6 +289,29 @@ function Timeline({ uploads, events }) {
         </p>
       )}
     </div>
+    {/* Outside the scroller, so dragging in it doesn't pan the timeline. */}
+    {openEvent && (
+      <dialog
+        className="event-dialog"
+        ref={dialogRef}
+        aria-label={openEvent.title}
+        onClose={() => setOpenEvent(null)}
+        onClick={handleDialogClick}
+      >
+        <button
+          type="button"
+          className="back-link"
+          aria-label="Back to timeline"
+          onClick={() => dialogRef.current.close()}
+        >
+          ←
+        </button>
+        <PersonalEntry
+          upload={{ ...openEvent, description: openEvent.desc, submitter: null }}
+        />
+      </dialog>
+    )}
+    </>
   )
 }
 

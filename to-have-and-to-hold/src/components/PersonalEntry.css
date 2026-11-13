@@ -98,3 +98,28 @@
     right: 7%;
   }
 }
+
+/* No photo (a timeline event): the text patch alone, centred, as wide as
+   the photo patch would be, with the title and details in the patch type
+   (PatchText.css) on it. */
+.personal-entry--text {
+  --desc-width: var(--entry-width);
+
+  .personal-entry-desc {
+    position: static;
+  }
+
+  h5 {
+    margin: 0 0 0.5em;
+    font-family: "Playfair Display", serif;
+    font-size: 1em;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .patch-text-meta {
+    margin-top: 0.5em;
+    font-size: 0.7em;
+    opacity: 0.8;
+  }
+}
